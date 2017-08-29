@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品-优惠券</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide">
+<div class="ft-wrap height top">
+    <!--顶部悬浮导航-->
+    <div class="ft-head-nav">
+        <a class="ft-h-back" href="javascript:;">返回</a>
+        <span class="ft-head-text">Coupons</span>
+        <!--<a class="ft-h-more" href="javascript:;">详情</a>-->
+    </div>
+    <!--中间滚动内容-->
+    <div class="ft-container no-padding height">
+        <div class="ft-overflow">
+            <div class="ft-module no-top no-mar coupon-module">
+                <div class="module-hd">
+                    <label>Coupon code</label>
+                </div>
+                <div class="module-bd">
+                    <div class="coupon-code">
+                        <label><input type="text" value="" placeholder="Enter Code"></label>
+                        <a class="ft-btn line" href="javascript:;">Use</a>
+                    </div>
+                </div>
+            </div>
+            <div class="placeholder-box"></div>
+            <div class="ft-module no-mar no-bto coupon-list-module">
+                <div class="module-hd">
+                    <label>Coupon code</label>
+                </div>
+                <div class="module-bd">
+                    <div class="coupon-bar">
+                        <ul class="pop-coupons-bd">
+                            <li>
+                                <div class="coupons-item clearfix">
+                                    <div class="coupon-intro active">
+                                        <div class="coupon-bg">
+                                            <span><i>$500000000.00</i> Coupons</span>
+                                            <span>Orders over <i>$ 0.00</i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="coupon-date clearfix">
+                                        <div class="coupon-time t-ellipsis active">Expire on: Mar 23 2017</div>
+                                        <div class="coupon-tips active">BSKADFH</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="coupons-item clearfix">
+                                    <div class="coupon-intro active">
+                                        <div class="coupon-bg">
+                                            <span><i>$50.00</i> Coupons</span>
+                                            <span>Orders over <i>$ 5890.00</i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="coupon-date clearfix">
+                                        <div class="coupon-time t-ellipsis active">Expire on: Mar 23 2017</div>
+                                        <div class="coupon-tips active">BSKADFH</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="coupons-item clearfix">
+                                    <div class="coupon-intro">
+                                        <div class="coupon-bg">
+                                            <span><i>$500000000.00</i> Coupons</span>
+                                            <span>Orders over <i>$ 0.00</i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="coupon-date clearfix">
+                                        <div class="coupon-time t-ellipsis">Expire on: Mar 23 2017</div>
+                                        <div class="coupon-tips">BSKADFH</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="coupons-item clearfix">
+                                    <div class="coupon-intro">
+                                        <div class="coupon-bg">
+                                            <span><i>$50.00</i> Coupons</span>
+                                            <span>Orders over <i>$ 5890.00</i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="coupon-date clearfix">
+                                        <div class="coupon-time t-ellipsis">Expire on: Mar 23 2017</div>
+                                        <div class="coupon-tips">BSKADFH</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--loading-->
+    <div class="classify-loading coupon-loading"></div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/box.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        $(".ft-btn.line").click(function () {
+            if ($(".coupon-code input").val() != "") {
+                $.jAlert.loading("Loading...", null, {
+                    animate: "j-alert-normal",
+                    iconType: "H",
+                    isFull: true
+                });
+                setTimeout(function () {
+                    $.jClose({type: 2});
+                }, 1000);
+            } else {
+                $.jAlert.tips("The coupon code <br>cannot be null");
+            }
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品-添加新的收货地址</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide">
+<div class="ft-wrap height top">
+    <!--顶部悬浮导航-->
+    <div class="ft-head-nav has-close">
+        <a class="ft-h-back" href="javascript:;">返回</a>
+        <a class="ft-h-close" href="javascript:;">关闭</a>
+        <span class="ft-head-text">Shipping Address</span>
+    </div>
+    <!--中间滚动内容-->
+    <div class="ft-container no-padding height background">
+        <div class="ft-overflow">
+            <div class="ft-module no-mar no-border area-module">
+                <div class="no-area">
+                    <div class="module-hd">
+                        <label>Ship To:</label>
+                    </div>
+                    <div class="module-bd no-pad">
+                        <div class="area-form">
+                            <form method="post" action="" novalidate="novalidate" enctype="multipart/form-data">
+                                <div class="area-item mar-b10">
+                                    <label class="form-input">
+                                        <span class="form-input-title">Email*</span>
+                                        <span class="form-input-cont">
+                                            <input type="email" value="">
+                                             <a href="javascript:;"><i class="ft-sprite"></i></a>
+                                        </span>
+                                    </label>
+                                    <label class="form-input">
+                                        <span class="form-input-title">Full Name*</span>
+                                        <span class="form-input-cont">
+                                            <input type="text" value="">
+                                            <a href="javascript:;"><i class="ft-sprite"></i></a>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="area-item border clearfix">
+                                    <div class="float-left width-45">
+                                        <label class="form-select">
+                                            <span>Country / Region*</span>
+                                            <i class="ft-sprite select-icon"></i>
+                                            <select>
+                                                <option value="1" selected>China</option>
+                                                <option value="2">USA</option>
+                                                <option value="3">Australian</option>
+                                                <option value="4">England</option>
+                                                <option value="5">China</option>
+                                                <option value="6">China</option>
+                                                <option value="7">China</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="float-left width-55">
+                                        <label class="form-select">
+                                            <span>State*</span>
+                                            <i class="ft-sprite select-icon"></i>
+                                            <select>
+                                                <option value="1" selected>1-China</option>
+                                                <option value="2">2-USA</option>
+                                                <option value="3">3-Australian</option>
+                                                <option value="4">4-England</option>
+                                                <option value="5">5-China</option>
+                                                <option value="6">6-China</option>
+                                                <option value="7">7-China</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="area-item">
+                                    <label class="form-input">
+                                        <input type="text" placeholder="Street Address*" value="">
+                                    </label>
+                                    <label class="form-input">
+                                        <input type="text" placeholder="Apt. / Bluiding / Doorplate*" value="">
+                                    </label>
+                                    <label class="form-input">
+                                        <input type="text" placeholder="City*" value="">
+                                    </label>
+                                </div>
+                                <div class="area-item clearfix">
+                                    <div class="float-left width-50">
+                                        <label class="form-input">
+                                            <input type="number" placeholder="Zip / Postal Code*" value="">
+                                        </label>
+                                    </div>
+                                    <div class="float-left width-50">
+                                        <label class="form-input">
+                                            <input type="number" placeholder="Phone*" value="">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="area-item background pad-all15 mar-t20">
+                                    <a class="ft-cart-btn active" href="javascript:;">Save Shipping Address</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        //单选
+        selectRadio(".pay-list li");
+        //下拉框
+        var $selcet = $(".form-select select");
+        $selcet.change(function () {
+            var _val = $(this).find("option:selected").val();
+            var _text = $(this).find("option:selected").text();
+            $(this).parents(".form-select").addClass("active").find("span").text(_text).data("value", _val);
+        });
+        $selcet.blur(function () {
+            $(this).change();
+        });
+        //清除输入内容
+        var $input = $(".form-input").find("input");
+        $input.focus(function () {
+            if ($(this).parents(".form-input-cont").length != 0) {
+                $(this).parents(".form-input-cont").addClass("active");
+            }
+        }).blur(function (e) {
+            var that=this;
+            e.stopPropagation();
+            setTimeout(function () {
+                $(that).parents(".form-input-cont").removeClass("active");
+            }, 10);
+        });
+
+
+        $(document).on("click", ".form-input-cont.active a", function (e) {
+            e.stopPropagation();
+            common.clearText($(this).prev());
+        });
+    })
+</script>
+</body>
+</html>

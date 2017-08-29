@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="ft-overflow-hide">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+</head>
+<body class="ft-overflow-hide">
+<div class="ft-wrap top">
+    <div class="ft-head-nav">
+        <a class="ft-h-back" href="javascript:;">返回</a>
+        <span class="ft-head-text">Create Account</span>
+        <a class="ft-more-text" href="#">Sign In</a>
+    </div>
+    <div class="ft-container">
+        <h2 class="ft-title">Let‘s create your account</h2>
+
+        <div class="ft-form">
+            <form action="" method="post" novalidate="novalidate" enctype="multipart/form-data">
+                <div class="ft-form-item">
+                    <div class="ft-row">
+                        <p>
+                            <label><input type="text" placeholder="First Name"></label>
+                        </p>
+
+                        <p>
+                            <label><input type="text" placeholder="Last Name"></label>
+                        </p>
+                    </div>
+                </div>
+                <div class="ft-form-item">
+                    <label><input type="email" placeholder="Email"></label>
+                </div>
+                <div class="ft-form-item">
+                    <label><input type="password" placeholder="Password"></label>
+                </div>
+                <div class="ft-form-item">
+                    <label><input type="password" placeholder="Confirm Password"></label>
+                </div>
+                <div class="ft-form-btn">
+                    <a class="ft-btn active" href="javascript:;">Create Account</a>
+
+                    <div class="ft-form-tips">
+                        <label class="ft-checkbox active">
+                            <span></span>
+                            <input id="checkBox" type="checkbox" checked>
+                        </label>
+                        <span>Agree with your <a class="ft-link active" href="#">User Agreement</a> and <a
+                                class="ft-link active" href="#">Privacy Policy</a></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/box.js"></script>
+<script>
+    $(function () {
+        $("#checkBox").change(function () {
+            var $this = $(this);
+            $this.parents(".ft-checkbox").toggleClass("active");
+        });
+
+        $(".ft-btn.active").click(function () {
+            $.jAlert.loadImage([
+                {
+                    id: "IMG1",
+                    src: "attestation-img.png",
+                    location: "../img/",
+                    loaded: function (src, w, h) {
+                        //w,h图片真实大小
+                        //src加载之后真实路径
+                        console.log(this, src, w, h);
+                    },
+                    error: function () {
+                        console.log(this);
+                    }
+                }
+            ]);
+
+            console.log($.jAlert.getImage("IMG1"));
+        });
+    })
+</script>
+</body>
+</html>

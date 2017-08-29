@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="ft-overflow-hide">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>忘记密码</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+</head>
+<body class="ft-overflow-hide">
+<div class="ft-wrap top height">
+    <div class="ft-head-nav">
+        <a class="ft-h-back" href="javascript:;">返回</a>
+        <span class="ft-head-text">Forgot Password</span>
+    </div>
+    <div class="ft-container height no-padding">
+        <!--第一步骤-->
+        <div class="ft-step step1">
+            <h2 class="ft-title">Let‘s reset your password</h2>
+
+            <div class="ft-form">
+                <div class="ft-form-item">
+                    <label><input type="email" placeholder="Email"></label>
+                </div>
+                <div class="ft-form-btn">
+                    <a class="ft-btn active" href="javascript:;">Reset password</a>
+                </div>
+            </div>
+        </div>
+        <!--第二步骤-->
+        <div class="ft-step step2 animated-left">
+            <h2 class="ft-title">Verification code has been sent to your e-mail</h2>
+
+            <form action="" method="post" novalidate="novalidate" enctype="multipart/form-data">
+                <div class="ft-form-item">
+                    <label><input type="password" placeholder="Password"></label>
+                </div>
+                <div class="ft-form-item">
+                    <label><input type="text" placeholder="Verification Code" maxlength="6"></label>
+                </div>
+                <div class="ft-form-btn">
+                    <a class="ft-btn active" href="javascript:;">Submit</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script>
+    $(function () {
+        $(".step1 a.ft-btn.active").click(function () {
+            $(".step2").addClass("active");
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="ft-overflow-hide">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>登陆</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+</head>
+<body class="ft-overflow-hide">
+<div class="ft-wrap top">
+    <div class="ft-head-nav">
+        <a class="ft-h-back" href="javascript:;">返回</a>
+        <span class="ft-head-text">Sign in</span>
+        <a class="ft-more-text" href="#">Register</a>
+    </div>
+    <div class="ft-container">
+        <h2 class="ft-title">Let‘s sign you in</h2>
+
+        <div class="ft-form">
+            <form action="" method="post" novalidate="novalidate" enctype="multipart/form-data">
+                <div class="ft-form-item">
+                    <label><input id="email" type="email" placeholder="Email"></label>
+                </div>
+                <div class="ft-form-item">
+                    <label><input id="password" type="password" placeholder="Password"></label>
+                </div>
+                <div class="ft-form-btn">
+                    <a id="login" class="ft-btn active" href="javascript:;">Sign in</a>
+                    <a class="ft-link block active" href="#">Forgot Password</a>
+                    <a class="ft-link block" href="#">About Onskysell</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/box.js"></script>
+<script>
+    $(function () {
+        $("#login").click(function () {
+            var email = $("#email").val();
+            var pas = $("#password").val();
+            if (email === "" && pas === "") {
+                $.jAlert.tips("Please fill in all the fields", {width: 250});
+            } else if (pas.length < 6) {
+                $.jAlert.tips("Please enter a password of at least 6 characters", {width: 250});
+            } else if (pas != "123456") {
+                $.jConfirm("Email or Password is incorrect", [
+                    {
+                        text: "Try Again",
+                        src: "javascript:;",
+                        callback: function () {
+                            console.log(0);
+                        }
+                    },
+                    {
+                        text: "Create Account",
+                        src: "#",
+                        callback: function () {
+                            console.log(1);
+                        }
+                    }
+                ], "V");
+            }
+        });
+    })
+</script>
+</body>
+</html>

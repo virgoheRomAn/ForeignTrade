@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品-我的收藏</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide ft-theme2 ">
+<!--顶部浮动工具栏-->
+<div class="pos-fix ft-header in-header border">
+    <div class="ft-menu-btn in-left-btn">
+        <a class="in-back-btn" href="javascript:;" id="back">
+            <i class="in-back-icon ft-sprite">返回</i>
+        </a>
+    </div>
+    <span class="ft-head-title in-head-title"><i>Wishlist</i></span>
+    <div class="ft-menu-btn in-right-btn">
+        <a class="in-edit-btn" href="javascript:;" id="editer">
+            <i class="in-edit-icon right ft-sprite">编辑</i>
+        </a>
+        <a class="in-filtrate-btn" href="javascript:;" id="filtrate">
+            <i class="in-filtrate-icon right15 ft-sprite">筛选</i>
+        </a>
+    </div>
+</div>
+<!--页面滚动部分-->
+<div class="ft-wrap height">
+    <div class="ft-wrap ft-view ft-overflow">
+        <div class="ft-overflow-box">
+            <!--产品滚动内容-->
+            <div class="ft-container no-padding">
+                <div class="product-list product-recommend no-margin">
+                    <div class="list-container box-list">
+                        <ul class="row-2 clearfix border-bottom background">
+                            <li>
+                                <div class="edit-box">
+                                    <label class="ft-radio">
+                                        <input type="checkbox" name="shopItem" class="normal" value="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <span class="pro-discount-tips">-50%</span>
+                                            <img src="../img/pro-error.jpg" data-original="../img/product5.jpg">
+                                            <span class="pro-img-loading"></span>
+                                            <span class="pro-sale-tips">Almost Gone!</span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <div class="pro-intro collect-pro-intro">
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                    <span class="pro-sale-volume">10k+bought</span>
+                                                </label>
+                                                <span class="join-in-cart"><i class="ft-sprite"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="edit-box">
+                                    <label class="ft-radio">
+                                        <input type="checkbox" name="shopItem" class="normal" value="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <img src="../img/pro-error.jpg" data-original="../img/product4.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <div class="pro-intro collect-pro-intro">
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                    <span class="pro-sale-volume">10k+bought</span>
+                                                </label>
+                                                <span class="join-in-cart"><i class="ft-sprite"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="edit-box">
+                                    <label class="ft-radio">
+                                        <input type="checkbox" name="shopItem" class="normal" value="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <img src="../img/pro-error.jpg" data-original="../img/product3.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <div class="pro-intro collect-pro-intro">
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                    <span class="pro-sale-volume">10k+bought</span>
+                                                </label>
+                                                <span class="join-in-cart"><i class="ft-sprite"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="edit-box">
+                                    <label class="ft-radio">
+                                        <input type="checkbox" name="shopItem" class="normal" value="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <img src="../img/pro-error.jpg" data-original="../img/product2.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <div class="pro-intro collect-pro-intro">
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                    <span class="pro-sale-volume">10k+bought</span>
+                                                </label>
+                                                <span class="join-in-cart"><i class="ft-sprite"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="edit-box">
+                                    <label class="ft-radio">
+                                        <input type="checkbox" name="shopItem" class="normal" value="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <img src="../img/pro-error.jpg" data-original="../img/product1.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <div class="pro-intro collect-pro-intro">
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                    <span class="pro-sale-volume">10k+bought</span>
+                                                </label>
+                                                <span class="join-in-cart"><i class="ft-sprite"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="edit-box">
+                                    <label class="ft-radio">
+                                        <input type="checkbox" name="shopItem" class="normal" value="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <img src="../img/pro-error.jpg" data-original="../img/product2.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <div class="pro-intro collect-pro-intro">
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                    <span class="pro-sale-volume">10k+bought</span>
+                                                </label>
+                                                <span class="join-in-cart"><i class="ft-sprite"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="list-loading">
+                            <i><img src="../img/loading.gif"></i>
+                            <span>Loading</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部编辑悬浮-->
+<div class="details-buy background animated-bottom">
+    <div class="buy-bar big-pad">
+        <div class="buy-intro-money">
+            <label class="ft-radio" id="allCheckbox">
+                <input type="checkbox" name="shopItem" data-select="all" value="">
+                <span></span>
+            </label>
+            <span class="select-all">All</span>
+        </div>
+        <div class="two-btn clearfix">
+            <a class="buy-btn line" href="javascript:;" id="cancel"><i>Cancel</i></a>
+            <a class="buy-btn" href="javascript:;" id="remove"><i>Remove</i></a>
+        </div>
+    </div>
+</div>
+
+
+<!--右侧筛选内容-->
+<div class="ft-pop-disk ft-filtrate-bar">
+    <div class="ft-pop-box ft-filtrate-box animated-left">
+        <div class="filtrate-title">
+            <a href="javascript:;"><i class="ft-sprite"></i></a>
+            <span>Refine</span>
+        </div>
+        <div class="filtrate-list-bar">
+            <div class="filtrate-list filtrate-list1 ft-overflow">
+                <a href="javascript:;">Rating<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Category<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Color<span class="t-ellipsis">Bronze, Gold</span></a>
+                <a href="javascript:;">Rating<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Category<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Color<span class="t-ellipsis">Bronze, Gold</span></a>
+                <a href="javascript:;">Rating<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Category<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Color<span class="t-ellipsis">Bronze, Gold</span></a>
+                <a href="javascript:;">Rating<span class="t-ellipsis"></span></a>
+            </div>
+            <div class="filtrate-list filtrate-list2 ft-overflow animated-left">
+                <a class="active" href="javascript:;">Category<i class="ft-sprite"></i></a>
+                <a href="javascript:;">Color<i class="ft-sprite"></i></a>
+                <a class="active" href="javascript:;">Rating<i class="ft-sprite"></i></a>
+                <a href="javascript:;">Category<i class="ft-sprite"></i></a>
+            </div>
+        </div>
+
+        <div class="filtrate-button clearfix">
+            <a class="filtrate-clear" href="javascript:;">Clear All</a>
+            <a class="filtrate-apply" href="javascript:;">Apply</a>
+        </div>
+    </div>
+</div>
+
+<!--置顶按钮-->
+<a class="pos-fix go-top big-bto" href="javascript:;" id="goTop"><img src="../img/icon-top.png"></a>
+
+<script type="text/template" id="productListCont">
+    <li>
+        <div class="edit-box /%*cls*%/">
+            <label class="ft-radio /%*curCls*%/">
+                <input type="checkbox" name="shopItem" class="normal" value="">
+                <span></span>
+            </label>
+        </div>
+        <a href="#">
+            <div class="pro-box">
+                <label class="pro-img new-pro-img">
+                    <img src="../img/pro-error.jpg" data-original="../img/product4.jpg">
+                    <span class="pro-img-loading"></span>
+                </label>
+                <div class="pos-relative">
+                    <div class="pro-intro collect-pro-intro">
+                        <label class="pro-price">
+                            <span class="price-new">US$80.00</span>
+                            <span class="pro-sale-volume">10k+bought</span>
+                        </label>
+                        <span class="join-in-cart"><i class="ft-sprite"></i></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</script>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/swiper.jquery.min.js"></script>
+<script src="../js/jquery.lazyload.min.js"></script>
+<script src="../js/box.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        //产品图片懒加载
+        proImgLazyLoad(".pro-img", ".ft-overflow");
+        //页面滚动
+        var ajaxDataNum = 0, downflag = false;
+        pageScroll({
+            hasTop: true,
+            element: ".ft-overflow",
+            ajaxFun: function () {
+                if (!downflag) {
+                    downflag = true;
+                    setTimeout(function () {
+                        var $edit = $("#editer");
+                        var cls = $edit.hasClass("active") ? "active" : "";
+                        var curCls = ($edit.hasClass("active") && $("#allCheckbox").hasClass("active")) ? "active" : "";
+                        var list = $("#productListCont").html().replace("/%*cls*%/", cls).replace("/%*curCls*%/", curCls);
+                        var str = "";
+                        for (var i = 0; i <= 9; i++) {
+                            str += list;
+                        }
+                        ajaxDataNum++;
+                        if (ajaxDataNum >= 5) {
+                            $(".list-loading").html("No more items");
+                            return false;
+                        }
+                        $(".product-recommend").find("ul").append(str);
+                        proImgLazyLoad(".new-pro-img", ".ft-overflow", function (ele) {
+                            ele.removeClass("new-pro-img");
+                        });
+                        downflag = false;
+                    }, 1000);
+                }
+            }
+        });
+
+        //显示右侧筛选
+        popLeftMenu({
+            clickEle: "#filtrate",
+            diskEle: ".ft-filtrate-bar",
+            animateEle: ".ft-filtrate-box"
+        });
+        //筛选操作
+        filtrateHandle();
+
+        //编辑状态
+        $("#editer").click(function () {
+            var $edit = $(".edit-box");
+            var $bto = $(".details-buy");
+            var that = this;
+            $(that).toggleClass("active");
+            $edit.toggleClass("active");
+            $bto.toggleClass("active");
+            $(".ft-wrap.height").toggleClass("bto");
+        });
+
+        //取消编辑
+        $("#cancel").click(function () {
+            $("#editer").click();
+        });
+
+        $("#remove").click(function () {
+            $(".ft-radio.active input.normal").parents("li").fadeOut(300, function () {
+                $(this).remove();
+            });
+        });
+
+        //复选框
+        selectCheckbox();
+    })
+</script>
+</body>
+</html>

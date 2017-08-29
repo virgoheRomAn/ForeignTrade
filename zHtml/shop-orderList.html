@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品-订单列表</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide ft-theme2 shop-details">
+<!--顶部浮动工具栏-->
+<div class="pos-fix ft-header in-header border">
+    <div class="ft-menu-btn in-left-btn">
+        <a class="in-back-btn" href="javascript:;" id="back">
+            <i class="in-back-icon ft-sprite">返回</i>
+        </a>
+    </div>
+    <span class="ft-head-title in-head-title"><i>My Orders</i></span>
+    <div class="ft-menu-btn in-right-btn right-one-btn">
+        <a class="in-search-btn" href="javascript:;" id="search">
+            <i class="in-search-icon ft-sprite">搜索</i>
+        </a>
+    </div>
+</div>
+<!--菜单导航-->
+<div class="pos-fix nav-list">
+    <div class="swiper-container" id="inNav">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide active" data-box="overview">All <i>(10)</i></div>
+            <div class="swiper-slide " data-box="description">Waiting payment <i>(20)</i></div>
+            <div class="swiper-slide " data-box="rating">Waiting shipping <i>(30)</i></div>
+        </div>
+    </div>
+</div>
+<!--页面滚动部分-->
+<div class="ft-wrap ft-overflow">
+    <div class="ft-overflow-box">
+        <div class="my-order-bar no-order-bar" style="display: none;">
+            <div class="no-order-cont">
+                <label>
+                    <img src="../img/no-order.png">
+                    <span>No data</span>
+                </label>
+                <a class="ft-cart-btn active" href="#">Back to Home</a>
+            </div>
+        </div>
+        <div class="my-order-bar order-detail-bar hsa-order-bar">
+            <div class="ft-module no-top no-mar">
+                <div class="module-hd">
+                    <label class="color-orange">Waiting payment</label>
+                    <span class="float-right color-gray-a0a">2017-02-22 00:24:47</span>
+                </div>
+                <div class="module-bd no-pad">
+                    <div class="order-intro">
+                        <ul class="order-list">
+                            <li>
+                                <a href="#">
+                                    <div class="order-cont">
+                                        <label class="order-img"><img src="../img/product5.jpg"></label>
+                                        <div class="order-detail">
+                                            <label class="order-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly KnifePrace</label>
+                                            <label class="order-sort">Brown, 15.6</label>
+                                            <label class="order-money t-normal">US$20.00<span>x1</span></label>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="order-cont">
+                                        <label class="order-img"><img src="../img/product2.jpg"></label>
+                                        <div class="order-detail">
+                                            <label class="order-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly KnifePrace</label>
+                                            <label class="order-sort">Brown, 18.6</label>
+                                            <label class="order-money t-normal">US$200.00<span>x2</span></label>
+                                            <label class="order-result color-orange">Return failed</label>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="order-cost">
+                            <div class="cost-item t-right">
+                                <span class="cost-name">Total: US$123.50</span>
+                                <span class="cost-fee">(Freight: $3.50)</span>
+                            </div>
+                            <div class="cost-item">
+                                <div class="order-handle clearfix">
+                                    <div class="float-right">
+                                        <a class="ft-btn" href="javascript:;">Request a refund</a>
+                                        <a class="ft-btn" href="javascript:;">Cancel Order</a>
+                                        <a class="ft-btn line" href="javascript:;">Confirm receipt</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-module">
+                <div class="module-hd">
+                    <label class="color-orange">Waiting payment</label>
+                    <span class="float-right color-gray-a0a">2017-02-22 00:24:47</span>
+                </div>
+                <div class="module-bd no-pad">
+                    <div class="order-intro">
+                        <ul class="order-list">
+                            <li>
+                                <a href="#">
+                                    <div class="order-cont">
+                                        <label class="order-img"><img src="../img/product5.jpg"></label>
+                                        <div class="order-detail">
+                                            <label class="order-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly KnifePrace</label>
+                                            <label class="order-sort">Brown, 15.6</label>
+                                            <label class="order-money t-normal">US$20.00<span>x1</span></label>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="order-cont">
+                                        <label class="order-img"><img src="../img/product2.jpg"></label>
+                                        <div class="order-detail">
+                                            <label class="order-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly KnifePrace</label>
+                                            <label class="order-sort">Brown, 18.6</label>
+                                            <label class="order-money t-normal">US$200.00<span>x2</span></label>
+                                            <label class="order-result color-orange">Return failed</label>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="order-cost">
+                            <div class="cost-item t-right">
+                                <span class="cost-name">Total: US$123.50</span>
+                                <span class="cost-fee">(Freight: $3.50)</span>
+                            </div>
+                            <div class="cost-item">
+                                <div class="order-handle clearfix">
+                                    <div class="float-right">
+                                        <a class="ft-btn" href="javascript:;">Request a refund</a>
+                                        <a class="ft-btn" href="javascript:;">Cancel Order</a>
+                                        <a class="ft-btn line" href="javascript:;">Confirm receipt</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--置顶按钮-->
+<a class="pos-fix go-top" href="javascript:;" id="goTop"><img src="../img/icon-top.png"></a>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/swiper.jquery.min.js"></script>
+<script src="../js/jquery.lazyload.min.js"></script>
+<script src="../js/box.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        //横向菜单
+        slideHorizontalNav("#inNav", {
+            clickFun: function () {
+                //切换内容
+                var that = this;
+                var _box = $(that).data("box");
+                $.jAlert.loading("Loading...", null, {
+                    animate: "j-alert-normal",
+                    iconType: "v",
+                    isFull: true
+                });
+                setTimeout(function () {
+                    $.jClose({type: 2});
+                    $("#" + _box).show().siblings().hide();
+                }, 500);
+            }
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>设置-货币</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide">
+<div class="ft-wrap height top">
+    <!--顶部悬浮导航-->
+    <div class="ft-head-nav">
+        <a class="ft-h-back" href="javascript:;">返回</a>
+        <span class="ft-head-text">Currency</span>
+    </div>
+    <!--中间滚动内容-->
+    <div class="ft-container no-padding height background">
+        <div class="ft-overflow">
+            <div class="ft-module no-mar no-border currency-module">
+                <div class="module-hd">
+                    <span class="specail">Current Currency: </span>
+                    <label id="currencyType">USD</label>
+                </div>
+                <div class="module-bd no-pad">
+                    <div class="currency-list box-list">
+                        <ul class="row-2">
+                            <li><a class="active" href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>AUD</i><em>AU$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                            <li><a href="javascript:;"><i>USD</i><em>US$</em></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/ft-common.js"></script>
+<script>
+    $(function () {
+        $(".currency-list a").click(function () {
+            var currency = $(this).find("i").text();
+            $(this).addClass("active").parents("li").siblings().find("a").removeClass("active");
+            $("#currencyType").text(currency);
+        });
+    })
+</script>
+</body>
+</html>

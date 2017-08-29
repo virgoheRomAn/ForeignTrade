@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1"/>
+</head>
+<body class="isHide">
+<div class="ft-wrap ft-view ft-overflow">
+    <!--顶部导航-->
+    <div class="ft-wrap">
+        <div class="ft-header in-header">
+            <div class="ft-menu-btn in-left-btn">
+                <a class="in-menu-btn" href="javascript:;" id="menu">
+                    <i class="in-menu-icon ft-sprite">菜单</i>
+                </a>
+            </div>
+            <span class="ft-head-title in-head-title"><img src="../img/ft-logo.png"></span>
+            <div class="ft-menu-btn in-right-btn">
+                <a class="in-filtrate-btn" href="javascript:;">
+                    <i class="in-filtrate-icon ft-sprite">筛选</i>
+                </a>
+                <a class="in-cart-btn" href="javascript:;">
+                    <i class="in-cart-icon ft-sprite">购物车</i>
+                    <span class="in-cart-num">99+</span>
+                </a>
+            </div>
+        </div>
+        <div class="in-search-bar">
+            <label class="in-search">
+                <i class="ft-sprite"></i>
+                <input type="text" placeholder="Search" id="searchInput">
+            </label>
+            <a class="in-search-cancel" href="javascript:;">Cancel</a>
+        </div>
+        <div class="nav-list">
+            <div class="swiper-container" id="inNav">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">Latest</div>
+                    <div class="swiper-slide active">Shirt</div>
+                    <div class="swiper-slide ">Tops</div>
+                    <div class="swiper-slide ">Shoes</div>
+                    <div class="swiper-slide ">Hobbies</div>
+                    <div class="swiper-slide ">Latest2</div>
+                    <div class="swiper-slide ">Shirt2</div>
+                    <div class="swiper-slide ">Tops2</div>
+                    <div class="swiper-slide ">Shoes2</div>
+                    <div class="swiper-slide ">Hobbies2</div>
+                </div>
+            </div>
+            <div class="pos-abs-tl nav-left-placeholder">左侧占位</div>
+            <div class="pos-abs-tr nav-right-placeholder">右侧占位</div>
+        </div>
+    </div>
+    <!--产品滚动内容-->
+    <div class="ft-container no-padding">
+        <div class="product-list">
+            <div class="pull-down" style="display: block;">
+                <i class="ft-sprite"></i>
+                <label>
+                    <span>Pull down to refresh</span>
+                    <span>Last update a second ago</span>
+                </label>
+            </div>
+
+            <div class="list-container box-list">
+                <ul class="row-2 clearfix">
+                    <li>
+                        <div class="pro-tips">
+                            <div class="pro-cutdown">
+                                <label class="ft-cutdown" data-time="2017/05/20">
+                                    <span class="ft-time-day">03d</span>:<span class="ft-time-hour">18h</span>:<span
+                                        class="ft-time-minute">25m</span>
+                                </label>
+                                <label class="pro-time-text">Today's Deal</label>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="pro-box">
+                                <label class="pro-img">
+                                    <img src="../img/pro-error.jpg" data-original="../img/product1.jpg">
+                                    <span class="pro-img-loading"></span>
+                                </label>
+                                <div class="pro-intro">
+                                    <label class="pro-price">
+                                        <span class="price-new">US$80.00</span>
+                                        <span class="price-old"> US$160.00 </span>
+                                    </label>
+                                    <div class="pro-hots clearfix">
+                                        <label class="pro-star star3">
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                class="ft-sprite"></i><i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                        </label>
+                                        <span class="pro-sale-volume">10k+bought</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="pro-tips">
+                            <div class="pro-discount-tips">-50%</div>
+                        </div>
+                        <a href="#">
+                            <div class="pro-box">
+                                <label class="pro-img">
+                                    <img src="../img/pro-error.jpg" data-original="../img/product2.jpg">
+                                    <span class="pro-img-loading"></span>
+
+                                    <span class="pro-sale-tips">Almost Gone!</span>
+                                </label>
+                                <div class="pro-intro">
+                                    <label class="pro-price">
+                                        <span class="price-new">US$80.00</span>
+                                        <span class="price-old"> US$160.00 </span>
+                                    </label>
+                                    <div class="pro-hots clearfix">
+                                        <label class="pro-star star2">
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                class="ft-sprite"></i><i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                        </label>
+                                        <span class="pro-sale-volume">10k+bought</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pro-box">
+                                <label class="pro-img">
+                                    <img src="../img/pro-error.jpg" data-original="../img/product3.jpg">
+                                    <span class="pro-img-loading"></span>
+                                </label>
+                                <div class="pro-intro">
+                                    <label class="pro-price">
+                                        <span class="price-new">US$80.00</span>
+                                        <span class="price-old"> US$160.00 </span>
+                                    </label>
+                                    <div class="pro-hots clearfix">
+                                        <label class="pro-star star3">
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                class="ft-sprite"></i><i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                        </label>
+                                        <span class="pro-sale-volume">10k+bought</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pro-box">
+                                <label class="pro-img">
+                                    <img src="../img/pro-error.jpg" data-original="../img/product4.jpg">
+                                    <span class="pro-img-loading"></span>
+                                </label>
+                                <div class="pro-intro">
+                                    <label class="pro-price">
+                                        <span class="price-new">US$80.00</span>
+                                        <span class="price-old"> US$160.00 </span>
+                                    </label>
+                                    <div class="pro-hots clearfix">
+                                        <label class="pro-star star2">
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                class="ft-sprite"></i><i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                        </label>
+                                        <span class="pro-sale-volume">10k+bought</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pro-box">
+                                <label class="pro-img">
+                                    <img src="../img/pro-error.jpg" data-original="../img/product1.jpg">
+                                    <span class="pro-img-loading"></span>
+                                </label>
+                                <div class="pro-intro">
+                                    <label class="pro-price">
+                                        <span class="price-new">US$160.00</span>
+                                        <span class="price-old"> US$180.00 </span>
+                                    </label>
+                                    <div class="pro-hots clearfix">
+                                        <label class="pro-star star4">
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                class="ft-sprite"></i><i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                        </label>
+                                        <span class="pro-sale-volume">10k+bought</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pro-box">
+                                <label class="pro-img">
+                                    <img src="../img/pro-error.jpg" data-original="../img/product2.jpg">
+                                    <span class="pro-img-loading"></span>
+                                </label>
+                                <div class="pro-intro">
+                                    <label class="pro-price">
+                                        <span class="price-new">US$80.00</span>
+                                        <span class="price-old"> US$160.00 </span>
+                                    </label>
+                                    <div class="pro-hots clearfix">
+                                        <label class="pro-star star5">
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                class="ft-sprite"></i><i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                        </label>
+                                        <span class="pro-sale-volume">10k+bought</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pro-box">
+                                <label class="pro-img">
+                                    <img src="../img/pro-error.jpg" data-original="../img/product3.jpg">
+                                    <span class="pro-img-loading"></span>
+                                </label>
+                                <div class="pro-intro">
+                                    <label class="pro-price">
+                                        <span class="price-new">US$80.00</span>
+                                        <span class="price-old"> US$160.00 </span>
+                                    </label>
+                                    <div class="pro-hots clearfix">
+                                        <label class="pro-star star3">
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                class="ft-sprite"></i><i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                        </label>
+                                        <span class="pro-sale-volume">10k+bought</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pro-box">
+                                <label class="pro-img">
+                                    <img src="../img/pro-error.jpg" data-original="../img/product4.jpg">
+                                    <span class="pro-img-loading"></span>
+                                </label>
+                                <div class="pro-intro">
+                                    <label class="pro-price">
+                                        <span class="price-new">US$80.00</span>
+                                        <span class="price-old"> US$160.00 </span>
+                                    </label>
+                                    <div class="pro-hots clearfix">
+                                        <label class="pro-star star2">
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                class="ft-sprite"></i><i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                        </label>
+                                        <span class="pro-sale-volume">10k+bought</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pro-box">
+                                <label class="pro-img">
+                                    <img src="../img/pro-error.jpg" data-original="../img/product3.jpg">
+                                    <span class="pro-img-loading"></span>
+                                </label>
+                                <div class="pro-intro">
+                                    <label class="pro-price">
+                                        <span class="price-new">US$160.00</span>
+                                        <span class="price-old"> US$180.00 </span>
+                                    </label>
+                                    <div class="pro-hots clearfix">
+                                        <label class="pro-star star4">
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                class="ft-sprite"></i><i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                        </label>
+                                        <span class="pro-sale-volume">10k+bought</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pro-box">
+                                <label class="pro-img">
+                                    <img src="../img/pro-error.jpg" data-original="../img/product1.jpg">
+                                    <span class="pro-img-loading"></span>
+                                </label>
+                                <div class="pro-intro">
+                                    <label class="pro-price">
+                                        <span class="price-new">US$80.00</span>
+                                        <span class="price-old"> US$160.00 </span>
+                                    </label>
+                                    <div class="pro-hots clearfix">
+                                        <label class="pro-star star5">
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                class="ft-sprite"></i><i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                        </label>
+                                        <span class="pro-sale-volume">10k+bought</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pull-up" style="display: block;">
+                <i class="ft-sprite"></i>
+                <label>
+                    <span>Pull down to refresh</span>
+                    <span>Last update a second ago</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--置顶按钮-->
+<a class="pos-fix go-top" href="javascript:;" id="goTop"><img src="../img/icon-top.png"></a>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/swiper.jquery.min.js"></script>
+<script src="../js/jquery.lazyload.min.js"></script>
+<script src="../js/ft-common.js"></script>
+<script>
+    $(function () {
+        //置顶
+        var $top = $("#goTop");
+        $(".ft-overflow").scroll(function () {
+            var top = $(this).scrollTop();
+            if (top > 100) {
+                $top.fadeIn();
+            } else {
+                $top.fadeOut();
+            }
+        });
+        $top.click(function () {
+            scrollToEle(".ft-overflow", 0);
+        });
+
+        function scrollToEle(ele, top, callback) {
+            if ((typeof arguments[0]).toString().toLocaleLowerCase() == "string") {
+                ele = arguments[0];
+            } else {
+                ele = "html,body";
+            }
+            $(ele).animate({"scrollTop": top + "px"}, 500, function () {
+                if (callback) callback.call(this);
+            });
+        }
+
+        //初始化swiper
+        var navSwiper = publicFuns.newSwiper("#inNav", 2);
+
+        var navBox = $("#inNav");
+        var navEle = $("#inNav").find(".swiper-slide");
+        var navActiveEle = $("#inNav").find(".swiper-slide.active");
+        var leftPlaceholder = $(".nav-left-placeholder"), rightPlaceholder = $(".nav-right-placeholder");
+
+        //初始化菜单
+        (function navInit() {
+            navEle.length >= 5 ? rightPlaceholder.show() : rightPlaceholder.hide();
+            navActiveEle.index() >= 4 ? leftPlaceholder.show() : leftPlaceholder.hide();
+            var w_w = $(window).width();
+            var _dom = navActiveEle;
+            var i = _dom.index();
+            var _left = _dom.offset().left;
+            if (_left > w_w) {
+                navSwiper.slideTo((i - 1), 100, false);
+            }
+        })();
+
+        //菜单点击
+        navEle.click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            var _curBar = navBox.find(".swiper-slide.active");
+            var _width = _curBar.offset().left + _curBar[0].offsetWidth + 60;
+            if (_width > $(window).width()) {
+                navSwiper.slideNext();
+            } else if ((_width - 60) < _curBar[0].offsetWidth * 2) {
+                navSwiper.slidePrev();
+            }
+            showPlaceholder();
+        });
+
+        //占位符显示
+        function showPlaceholder() {
+            var index = $("#inNav").find(".swiper-slide.active").index();
+            if (navEle.length >= 5) {
+                index >= 3 ? leftPlaceholder.show() : leftPlaceholder.hide();
+                index <= (navEle.length - 4) ? rightPlaceholder.show() : rightPlaceholder.hide();
+            }
+        }
+
+        //产品图片懒加载
+        $(".pro-img img").lazyload({
+            placeholder: "../img/loading.gif",
+            effect: "fadeIn",
+            threshold: 300,
+            container: $(".ft-wrap"),
+            load: function () {
+                $(this).parents(".pro-img").find("span.pro-img-loading").hide();
+            },
+            error: function () {
+                $(this).parents(".pro-img").find("span.pro-img-loading").hide();
+            }
+        });
+    })
+</script>
+</body>
+</html>

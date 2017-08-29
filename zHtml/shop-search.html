@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品-搜索</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide ft-theme2 pad-48">
+<!--顶部浮动工具栏-->
+<div class="pos-fix ft-header">
+    <div class="in-search-bar">
+        <div class="ft-menu-btn in-left-btn">
+            <a class="in-back-btn" href="javascript:;" id="back">
+                <i class="in-back-icon ft-sprite">返回</i>
+            </a>
+        </div>
+        <label class="in-search">
+            <i class="ft-sprite"></i>
+            <input type="text" placeholder="Search" id="searchInput">
+        </label>
+        <a class="in-search-cancel" href="javascript:;">Cancel</a>
+    </div>
+</div>
+<!--滚动内容-->
+<div class="ft-wrap ft-overflow">
+    <div class="in-search-list ft-wrap animated-bottom active">
+        <div class="search-result-none" style="display: none;">No products to display</div>
+        <div class="search-list-bar">
+            <h2 class="search-title">Recent Searches</h2>
+            <div class="ft-wrap">
+                <div class="search-list">
+                    <a href="#">aa batteries</a>
+                    <a href="#">aaa batteries</a>
+                    <a href="#">apple watch band</a>
+                    <a href="#">apple watch band 38</a>
+                    <a href="#">aa batteries</a>
+                    <a href="#">aaa batteries</a>
+                    <a href="#">apple watch band</a>
+                    <a href="#">apple watch band 38</a>
+                    <a href="#">aa batteries</a>
+                    <a href="#">aaa batteries</a>
+                    <a href="#">apple watch band</a>
+                    <a href="#">apple watch band 38</a>
+                    <a href="#">aa batteries</a>
+                    <a href="#">aaa batteries</a>
+                    <a href="#">apple watch band</a>
+                    <a href="#">apple watch band 38</a>
+                    <a href="#">aa batteries</a>
+                    <a href="#">aaa batteries</a>
+                    <a href="#">apple watch band</a>
+                    <a href="#">apple watch band 38</a>
+                    <a href="#">aa batteries</a>
+                    <a href="#">aaa batteries</a>
+                    <a href="#">apple watch band</a>
+                    <a href="#">apple watch band 38</a>
+                </div>
+                <a class="search-btn" href="javascript:;"><span>Clean Record</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/swiper.jquery.min.js"></script>
+<script src="../js/box.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        resizeInit();
+        //搜索
+        $("#searchInput").focus(function () {
+            $(".in-search-bar").addClass("active");
+        }).keyup(function () {
+            $(".in-search").addClass("active");
+            var _val = $(this).val();
+            if (_val == "asd") {
+                $(".search-list-bar").show();
+                $(".search-result-none").hide();
+            } else {
+                $(".search-list-bar").hide();
+                $(".search-result-none").show();
+            }
+        }).blur(function () {
+            $(".in-search-bar").removeClass("active");
+            $(".in-search").removeClass("active");
+        });
+
+        $(".in-search-cancel").click(function () {
+            $(".in-search-bar").removeClass("active");
+            $(".in-search").removeClass("active");
+        });
+
+        $(".search-btn").click(function () {
+            var that = $(".search-list");
+            $.jConfirm({title: "Are you sure?", intro: "Do you want to Clean Record?"}, [{
+                text: "No"
+            }, {
+                text: "Yes",
+                callback: function () {
+                    that.animate({"left": "-100%"}, 300, function () {
+                        $(this).remove();
+                        $(".search-list-bar").hide();
+                        $(".search-result-none").show();
+                    })
+                }
+            }]);
+        });
+    })
+</script>
+</body>
+</html>

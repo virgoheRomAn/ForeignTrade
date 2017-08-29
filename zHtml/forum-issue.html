@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>发布消息</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide">
+<div class="ft-wrap height top">
+    <!--顶部悬浮导航-->
+    <div class="ft-head-nav">
+        <a class="ft-h-back text" href="javascript:;">Cancel</a>
+        <span class="ft-head-text">Release news</span>
+        <a class="ft-more-text text-btn" href="javascript:;">Share</a>
+    </div>
+    <!--中间滚动内容-->
+    <div class="ft-container no-padding height background">
+        <div class="ft-overflow">
+            <div class="ft-module no-top no-mar">
+                <div class="ft-module no-mar no-border order-evaluate-module">
+                    <div class="module-bd">
+                        <div class="evaluate-bar">
+                            <label class="form-text no-mar">
+                                    <textarea cols="" rows=""
+                                              placeholder='The message you submitted will be released on the "test project"'></textarea>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft-module no-border no-mar evaluate-module">
+                    <div class="module-bd no-pad">
+                        <div class="upload-flies box-list max">
+                            <ul class="row-4">
+                                <li>
+                                    <label class="ft-img-box">
+                                        <a class="close-upload-btn" href="javascript:;"><i
+                                                class="ft-sprite"></i></a>
+                                        <img class="lazy" src="../img/banner-default.jpg">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="ft-img-box">
+                                        <a class="close-upload-btn" href="javascript:;"><i
+                                                class="ft-sprite"></i></a>
+                                        <img class="lazy" src="../img/product2.jpg">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="ft-img-box">
+                                        <a class="close-upload-btn" href="javascript:;"><i
+                                                class="ft-sprite"></i></a>
+                                        <img class="lazy" src="../img/banner-default.jpg">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="ft-img-box">
+                                        <a class="close-upload-btn" href="javascript:;"><i
+                                                class="ft-sprite"></i></a>
+                                        <img class="lazy" src="../img/product2.jpg">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="ft-img-box">
+                                        <a class="close-upload-btn" href="javascript:;"><i
+                                                class="ft-sprite"></i></a>
+                                        <img class="lazy" src="../img/banner-default.jpg">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="ft-img-box">
+                                        <a class="close-upload-btn" href="javascript:;"><i
+                                                class="ft-sprite"></i></a>
+                                        <img class="lazy" src="../img/product2.jpg">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="ft-img-box">
+                                        <a class="close-upload-btn" href="javascript:;"><i
+                                                class="ft-sprite"></i></a>
+                                        <img class="lazy" src="../img/banner-default.jpg">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="ft-img-box">
+                                        <a class="close-upload-btn" href="javascript:;"><i
+                                                class="ft-sprite"></i></a>
+                                        <img class="lazy" src="../img/product2.jpg">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="upload-btn">
+                                        <input type="file" value="">
+                                        <i class="ft-sprite"></i>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/jquery.lazyload.min.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        //上传图片
+        $(window).resize(function () {
+            var $upload = $(".upload-flies");
+            var w_w = $(this).width() - 20 - 50;
+            var cell_w = w_w / 4;
+            $upload.find("li label").css({"width": cell_w + "px", "height": cell_w + "px"});
+        }).trigger("resize");
+        //上传图片之后处理返回图片的大小
+        $("img.lazy").each(function () {
+            var that = $(this);
+            var w = that.width();
+            var h = that.height();
+            var ceil_w = Math.ceil(that.parents("label").width());
+            var ceil_h = Math.ceil(that.parents("label").height());
+            /**
+             * 执行下面计算函数
+             * this 当前上传的图片dom对象
+             * ceil_w，ceil_h参考的父辈高宽，已获取到
+             * w,h为图片的高宽，未加载完成的图片是获取不到的，
+             * 上传完成之后，记录图片的高宽，替换w,h
+             */
+            common.setImageLayout(this, ceil_w, ceil_h, w, h);
+        });
+    })
+</script>
+</body>
+</html>

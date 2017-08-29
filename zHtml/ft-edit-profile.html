@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>编辑配置文件</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide">
+<div class="ft-wrap height top">
+    <!--顶部悬浮导航-->
+    <div class="ft-head-nav">
+        <a class="ft-h-back" href="javascript:;">返回</a>
+        <span class="ft-head-text">Edit Profile</span>
+        <a class="ft-more-text" href="javascript:;">Save</a>
+    </div>
+    <!--中间滚动内容-->
+    <div class="ft-container no-padding height background">
+        <div class="ft-overflow">
+            <div class="ft-module slide-module">
+                <div class="module-bd no-pad">
+                    <div class="ft-menu-fast">
+                        <a class="set-head-img" href="javascript:;">
+                            <span>Change your avatar photo</span>
+                            <i><img src="../img/ft-hd7.jpg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-module no-border area-module">
+                <div class="no-area">
+                    <div class="module-hd">
+                        <label>Complete your profile page</label>
+                    </div>
+                    <div class="module-bd no-pad">
+                        <div class="area-form">
+                            <form method="post" action="" novalidate="novalidate" enctype="multipart/form-data">
+                                <div class="area-item mar-b10">
+                                    <label class="form-input">
+                                        <input type="email" placeholder="First Name*" value="">
+                                    </label>
+                                    <label class="form-input">
+                                        <input type="text" placeholder="Last Name*" value="">
+                                    </label>
+                                    <label class="form-input">
+                                        <input type="text" placeholder="Nickname*" value="">
+                                    </label>
+                                    <label class="form-input">
+                                        <input type="text" placeholder="Telephone Number*" value="">
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-module slide-module">
+                <div class="module-bd no-pad">
+                    <div class="ft-menu-fast no-pad">
+                        <label class="list-item">
+                            <a class="menu-list-item" href="javascript:;">
+                                <span class="t-ellipsis">Gender</span>
+                            </a>
+                            <select class="form-item">
+                                <option value="select" selected>Gender</option>
+                                <option value="man">Man</option>
+                                <option value="woman">Woman</option>
+                            </select>
+                        </label>
+                        <label class="list-item">
+                            <a class="menu-list-item" href="javascript:;">
+                                <span class="t-ellipsis">Birthday</span>
+                            </a>
+                            <input class="form-item" type="date" value="">
+                        </label>
+                        <label class="list-item">
+                            <a class="menu-list-item" href="javascript:;">
+                                <span class="t-ellipsis">United States</span>
+                            </a>
+                            <select class="form-item">
+                                <option value="select" selected>United States</option>
+                                <option value="man">Man</option>
+                                <option value="woman">Woman</option>
+                                <option value="man">Man</option>
+                                <option value="woman">Woman</option>
+                                <option value="man">Man</option>
+                                <option value="woman">Woman</option>
+                                <option value="man">Man</option>
+                                <option value="woman">Woman</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/jquery.lazyload.min.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        //下拉框
+        var $selcet = $(".list-item select");
+        var $input = $(".list-item input");
+        $selcet.change(function () {
+            var _val = $(this).find("option:selected").val();
+            var _text = $(this).find("option:selected").text();
+            $(this).parents(".list-item").find("span").text(_text).data("value", _val);
+        });
+        $selcet.blur(function () {
+            $(this).change();
+        });
+
+        $input.width($(window).width());
+
+        $input.change(function () {
+            var _val = $(this).val();
+            $(this).parents(".list-item").find("span").text(_val).data("value", _val);
+        });
+    })
+</script>
+</body>
+</html>

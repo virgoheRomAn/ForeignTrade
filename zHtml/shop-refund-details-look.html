@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品-查看退货信息</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide">
+<div class="ft-wrap height top">
+    <!--顶部悬浮导航-->
+    <div class="ft-head-nav">
+        <a class="ft-h-back" href="javascript:;">返回</a>
+        <span class="ft-head-text">Order Detail</span>
+    </div>
+    <!--中间滚动内容-->
+    <div class="ft-container no-padding height background">
+        <div class="ft-overflow">
+            <div class="my-order-bar">
+                <div class="ft-module no-mar no-top order-module">
+                    <div class="module-bd no-pad">
+                        <div class="order-intro">
+                            <ul class="order-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="order-cont">
+                                            <label class="order-img"><img src="../img/product2.jpg"></label>
+                                            <div class="order-detail">
+                                                <label class="order-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                    Butterfly KnifePrace</label>
+                                                <label class="order-sort">Brown, 18.6</label>
+                                                <label class="order-money t-normal">US$200.00<span>x2</span></label>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="order-cont">
+                                            <label class="order-img"><img src="../img/product5.jpg"></label>
+                                            <div class="order-detail">
+                                                <label class="order-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                    Butterfly KnifePrace</label>
+                                                <label class="order-sort">Brown, 15.6</label>
+                                                <label class="order-money t-normal">US$20.00<span>x1</span></label>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft-module total-module">
+                    <div class="module-bd small-pad">
+                        <div class="total-bar refund-total">
+                            <p>
+                                <span>Type of Servic:</span>
+                                <span class="float-right">Return for a refund</span>
+                            </p>
+                            <p>
+                                <span>Deliver or not:</span>
+                                <span class="float-right">Did not receive the goods</span>
+                            </p>
+                            <p>
+                                <span>Refund Reason:</span>
+                                <span class="float-right">The quality is not good</span>
+                            </p>
+                            <p>
+                                <span>Refund amount:</span>
+                                <span class="float-right">US$8.00</span>
+                            </p>
+                            <p>
+                                <span>Refund instructions:</span>
+                                <span class="float-right">The shipment is too slow</span>
+                            </p>
+                            <div class="upload-flies box-list">
+                                <span>Upload Files:</span>
+                                <ul class="row-5">
+                                    <li>
+                                        <label>
+                                            <img class="lazy" data-original="../img/banner-default.jpg"
+                                                 src="../img/pro-error.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <img class="lazy" data-original="../img/product2.jpg"
+                                                 src="../img/pro-error.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <img class="lazy" data-original="../img/wel-bg.jpg"
+                                                 src="../img/pro-error.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <img class="lazy" data-original="../img/product4.jpg"
+                                                 src="../img/pro-error.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <img class="lazy" data-original="../img/shop-banner2.jpg"
+                                                 src="../img/pro-error.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/jquery.lazyload.min.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        $(window).resize(function () {
+            var $upload = $(".upload-flies");
+            var w_w = $(this).width() - 20 - 50;
+            var cell_w = w_w / 5;
+            $upload.find("li label").css({"width": cell_w + "px", "height": cell_w + "px"});
+            proImgLazyLoad(".upload-flies", ".ft-overflow", function () {
+                var that = $(this);
+                var ceil_w = Math.ceil(that.parents("label").width());
+                var ceil_h = Math.ceil(that.parents("label").height());
+                common.setImageLayout(this, ceil_w, ceil_h);
+            });
+        }).trigger("resize");
+    })
+</script>
+</body>
+</html>

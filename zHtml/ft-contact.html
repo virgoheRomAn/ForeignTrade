@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>设置-联系我们</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide">
+<div class="ft-wrap height top">
+    <!--顶部悬浮导航-->
+    <div class="ft-head-nav">
+        <a class="ft-h-back" href="javascript:;">返回</a>
+        <span class="ft-head-text">Contact Us</span>
+    </div>
+    <!--中间滚动内容-->
+    <div class="ft-container no-padding height background">
+        <div class="ft-overflow">
+            <div class="ft-module no-mar no-top currency-module">
+                <div class="module-hd background height">
+                    <label class="t-normal">Use the form provided and we wll get back to you as soon as we can</label>
+                </div>
+                <div class="module-bd no-pad">
+                    <div class="contact-bar">
+                        <label class="form-input">
+                            <input type="text" placeholder="Your Topic" value="">
+                            <a class="ft-clear-text vertical" href="javascript:;"><i class="ft-sprite"></i></a>
+                        </label>
+                        <label class="form-text">
+                            <textarea cols="" rows="" placeholder="Your Message"></textarea>
+                            <span class="color-gray-a0a">1000</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-module no-bto">
+                <div class="module-bd no-pad">
+                    <label class="form-input">
+                        <input type="text" placeholder="Your E-mail Address" value="">
+                        <a class="ft-clear-text vertical" href="javascript:;"><i class="ft-sprite"></i></a>
+                    </label>
+                </div>
+            </div>
+            <div class="contact-btn pad-all15 mar-t10">
+                <a class="ft-cart-btn none mar-t10" href="javascript:;">Submit</a>
+                <a class="ft-cart-btn active mar-t10" href="javascript:;">Submit</a>
+            </div>
+            <div class="contact-bar-bto">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="ft-sprite c-email-icon"></i>
+                            <span class="color-orange">onskysell@Gmail.com</span>
+                            <label class="color-gray-666">Typical response time is within 24 hours</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ft-sprite c-phone-icon"></i>
+                            <span class="color-orange">000-768-8837377237</span>
+                            <label class="color-gray-666">Office time: 9:00am to 6:00pm GMT +08:00</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ft-sprite c-sky-icon"></i>
+                            <span class="color-orange">Chat Now</span>
+                            <label class="color-gray-666">We are live 24/7.Let us konw if you have any
+                                questions!</label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/ft-common.js"></script>
+<script>
+    $(function () {
+        //清除输入内容
+        var $input = $(".form-input").find("input");
+        $input.focus(function () {
+            if (!$(this).parents(".form-input").hasClass("active")) {
+                $(this).parents(".form-input").addClass("active");
+            }
+        }).blur(function (e) {
+            var that = this;
+            e.stopPropagation();
+            setTimeout(function () {
+                $(that).parents(".form-input").removeClass("active");
+            }, 10);
+        });
+
+
+        $(document).on("click", ".form-input.active a", function (e) {
+            e.stopPropagation();
+            common.clearText($(this).prev());
+        });
+
+        //统计输入文字个数
+        var $text = $(".form-text");
+        var num = parseInt($text.find("span").text());
+        $text.find("textarea").on("keyup", function () {
+            var _val = $(this).val();
+            var length = _val.length;
+            if ((num - length) < 0) {
+                $text.find("span").css("color", "red").text("beyond：" + (num - length));
+            } else {
+                $text.find("span").css("color", "#3c3c3c").text(num - length);
+            }
+        });
+    })
+</script>
+</body>
+</html>

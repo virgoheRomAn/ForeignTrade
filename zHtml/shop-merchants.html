@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品-商家主页</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide ft-theme2">
+<!--顶部浮动工具栏-->
+<div class="pos-fix ft-header in-header border">
+    <div class="ft-menu-btn in-left-btn">
+        <a class="in-back-btn" href="javascript:;" id="back">
+            <i class="in-back-icon ft-sprite">返回</i>
+        </a>
+        <a class="in-cart-btn" href="javascript:;" id="cart">
+            <i class="in-cart-icon ft-sprite">购物车</i>
+            <span class="in-cart-num">9</span>
+        </a>
+    </div>
+    <span class="ft-head-title in-head-title"><i>Apple watch</i></span>
+    <div class="ft-menu-btn in-right-btn">
+        <a class="in-search-btn" href="javascript:;" id="search">
+            <i class="in-search-icon ft-sprite">搜索</i>
+        </a>
+        <a class="in-refresh-btn" href="javascript:;" id="refresh">
+            <i class="in-refresh-icon ft-sprite">刷新</i>
+        </a>
+    </div>
+</div>
+<!--页面滚动部分-->
+<div class="ft-overflow-hide pad-t41">
+    <div class="ft-watch-title pos-abs-tl">
+        <div class="ft-watch-name">
+            <div class="ft-watch-select">
+                <span>Best Match</span>
+                <i class="arrow-top"></i>
+            </div>
+
+            <div class="ft-watch-change pos-abs-tr">
+                <a class="product-change" href="javascript:;"><i class="ft-sprite"></i></a>
+            </div>
+        </div>
+
+        <div class="ft-menu-btn in-right-btn">
+            <a class="in-filtrate-btn" href="javascript:;" id="filtrate">
+                <i class="in-filtrate-icon ft-sprite">筛选</i>
+                <span>Filter</span>
+            </a>
+        </div>
+
+
+        <div class="ft-watch-select-list">
+            <ul class="ft-overflow">
+                <li><a class="active" href="javascript:;">Best Match</a></li>
+                <li><a href="javascript:;">Best Match</a></li>
+                <li><a href="javascript:;">Price<span> (Low to High)</span></a></li>
+                <li><a href="javascript:;">Price<span> (High to High)</span></a></li>
+                <li><a href="javascript:;">Number of Orders</a></li>
+                <li><a href="javascript:;">Seller's Ratings</a></li>
+                <li><a href="javascript:;">Date Added<span>  (New to Old)</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ft-wrap ft-view ft-overflow" id="ContFlow">
+        <div class="ft-overflow-box">
+            <!--产品滚动内容-->
+            <div class="ft-container no-padding">
+                <div class="product-list product-recommend no-margin">
+                    <div class="list-container box-list">
+                        <ul class="row-2 clearfix border-bottom background">
+                            <li>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <span class="pro-discount-tips">-50%</span>
+                                            <img src="../img/pro-error.jpg" data-original="../img/product5.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <label class="pro-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly
+                                                KnifePrace...</label>
+                                            <div class="pro-intro">
+                                                <div class="pro-hots mar-b5 clearfix">
+                                                    <label class="pro-star star2">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                </label>
+
+                                        <span class="pro-collect float-right">
+                                            <i class="ft-sprite ft-collect">收藏</i>
+                                            <i class="conllect-loading"></i>
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <span class="pro-discount-tips">-50%</span>
+                                            <img src="../img/pro-error.jpg" data-original="../img/product4.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <label class="pro-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly
+                                                KnifePrace...</label>
+                                            <div class="pro-intro">
+                                                <div class="pro-hots mar-b5 clearfix">
+                                                    <label class="pro-star star2">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                </label>
+
+                                        <span class="pro-collect float-right">
+                                            <i class="ft-sprite ft-collect">收藏</i>
+                                            <i class="conllect-loading"></i>
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <span class="pro-discount-tips">-50%</span>
+                                            <img src="../img/pro-error.jpg" data-original="../img/product1.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <label class="pro-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly
+                                                KnifePrace...</label>
+                                            <div class="pro-intro">
+                                                <div class="pro-hots mar-b5 clearfix">
+                                                    <label class="pro-star star2">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                </label>
+
+                                        <span class="pro-collect float-right">
+                                            <i class="ft-sprite ft-collect">收藏</i>
+                                            <i class="conllect-loading"></i>
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <span class="pro-discount-tips">-50%</span>
+                                            <img src="../img/pro-error.jpg" data-original="../img/product5.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <label class="pro-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly
+                                                KnifePrace...</label>
+                                            <div class="pro-intro">
+                                                <div class="pro-hots mar-b5 clearfix">
+                                                    <label class="pro-star star2">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                </label>
+
+                                        <span class="pro-collect float-right">
+                                            <i class="ft-sprite ft-collect">收藏</i>
+                                            <i class="conllect-loading"></i>
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <span class="pro-discount-tips">-50%</span>
+                                            <img src="../img/pro-error.jpg" data-original="../img/product3.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <label class="pro-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly
+                                                KnifePrace...</label>
+                                            <div class="pro-intro">
+                                                <div class="pro-hots mar-b5 clearfix">
+                                                    <label class="pro-star star2">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                </label>
+
+                                        <span class="pro-collect float-right">
+                                            <i class="ft-sprite ft-collect">收藏</i>
+                                            <i class="conllect-loading"></i>
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <span class="pro-discount-tips">-50%</span>
+                                            <img src="../img/pro-error.jpg" data-original="../img/product2.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <label class="pro-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly
+                                                KnifePrace...</label>
+                                            <div class="pro-intro">
+                                                <div class="pro-hots mar-b5 clearfix">
+                                                    <label class="pro-star star2">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                </label>
+
+                                        <span class="pro-collect float-right">
+                                            <i class="ft-sprite ft-collect">收藏</i>
+                                            <i class="conllect-loading"></i>
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <span class="pro-discount-tips">-50%</span>
+                                            <img src="../img/pro-error.jpg" data-original="../img/product5.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <label class="pro-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly
+                                                KnifePrace...</label>
+                                            <div class="pro-intro">
+                                                <div class="pro-hots mar-b5 clearfix">
+                                                    <label class="pro-star star2">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                </label>
+
+                                        <span class="pro-collect float-right">
+                                            <i class="ft-sprite ft-collect">收藏</i>
+                                            <i class="conllect-loading"></i>
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <span class="pro-discount-tips">-50%</span>
+                                            <img src="../img/pro-error.jpg" data-original="../img/product1.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <label class="pro-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly
+                                                KnifePrace...</label>
+                                            <div class="pro-intro">
+                                                <div class="pro-hots mar-b5 clearfix">
+                                                    <label class="pro-star star2">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                </label>
+
+                                        <span class="pro-collect float-right">
+                                            <i class="ft-sprite ft-collect">收藏</i>
+                                            <i class="conllect-loading"></i>
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pro-box">
+                                        <label class="pro-img">
+                                            <span class="pro-discount-tips">-50%</span>
+                                            <img src="../img/pro-error.jpg" data-original="../img/product3.jpg">
+                                            <span class="pro-img-loading"></span>
+                                        </label>
+                                        <div class="pos-relative">
+                                            <label class="pro-name t-clamp">Fashion Stainless Steel Practice Trang
+                                                Butterfly
+                                                KnifePrace...</label>
+                                            <div class="pro-intro">
+                                                <div class="pro-hots mar-b5 clearfix">
+                                                    <label class="pro-star star2">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+
+                                                <label class="pro-price">
+                                                    <span class="price-new">US$80.00</span>
+                                                </label>
+
+                                        <span class="pro-collect float-right">
+                                            <i class="ft-sprite ft-collect">收藏</i>
+                                            <i class="conllect-loading"></i>
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="list-loading">
+                            <i><img src="../img/loading.gif"></i>
+                            <span>Loading</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--左侧侧滑菜单-->
+<div class="ft-pop-disk ft-menu-bar">
+    <div class="ft-pop-box ft-menu-box animated-right">
+        <div class="ft-personal">
+            <label class="personal-img"><img src="../img/user-headImg.jpg"></label>
+            <div class="ft-user-name">
+                <label class="presonal-intro">
+                    <span>Wangyi</span>
+                    <a href="#">Edit Profile<i class="ft-sprite"></i></a>
+                </label>
+            </div>
+        </div>
+        <div class="personal-nav">
+            <div class="swiper-container" id="menuBox">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <i class="ft-sprite menu-icon1"></i>
+                            <span>Browse</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <i class="ft-sprite menu-icon2"></i>
+                            <span>Search</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <i class="ft-sprite menu-icon3"></i>
+                            <span>Cart</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <i class="ft-sprite menu-icon4"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <i class="ft-sprite menu-icon5"></i>
+                            <span>Coupons</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <i class="ft-sprite menu-icon6"></i>
+                            <span>Wishlist</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <i class="ft-sprite menu-icon7"></i>
+                            <span>Wallet</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <i class="ft-sprite menu-icon8"></i>
+                            <span>Settings</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <i class="ft-sprite menu-icon9"></i>
+                            <span>About Us</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <i class="ft-sprite menu-icon10"></i>
+                            <span>Customer Services</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--右侧筛选内容-->
+<div class="ft-pop-disk ft-filtrate-bar">
+    <div class="ft-pop-box ft-filtrate-box animated-left">
+        <div class="filtrate-title">
+            <a href="javascript:;"><i class="ft-sprite"></i></a>
+            <span>Refine</span>
+        </div>
+        <div class="filtrate-list-bar">
+            <div class="filtrate-list filtrate-list1 ft-overflow">
+                <a href="javascript:;">Rating<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Category<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Color<span class="t-ellipsis">Bronze, Gold</span></a>
+                <a href="javascript:;">Rating<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Category<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Color<span class="t-ellipsis">Bronze, Gold</span></a>
+                <a href="javascript:;">Rating<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Category<span class="t-ellipsis"></span></a>
+                <a href="javascript:;">Color<span class="t-ellipsis">Bronze, Gold</span></a>
+                <a href="javascript:;">Rating<span class="t-ellipsis"></span></a>
+            </div>
+            <div class="filtrate-list filtrate-list2 ft-overflow animated-left">
+                <a class="active" href="javascript:;">Category<i class="ft-sprite"></i></a>
+                <a href="javascript:;">Color<i class="ft-sprite"></i></a>
+                <a class="active" href="javascript:;">Rating<i class="ft-sprite"></i></a>
+                <a href="javascript:;">Category<i class="ft-sprite"></i></a>
+            </div>
+        </div>
+
+        <div class="filtrate-button clearfix">
+            <a class="filtrate-clear" href="javascript:;">Clear All</a>
+            <a class="filtrate-apply" href="javascript:;">Apply</a>
+        </div>
+    </div>
+</div>
+<!--下方购物车-->
+<div class="ft-pop-disk ft-cart-bar">
+    <div class="ft-pop-box ft-cart-box animated-bottom">
+        <div class="ft-cart-close">
+            <a href="javascript:;">
+                <i class="ft-sprite"></i>
+                <span>CONTINUE SHOPPING</span>
+            </a>
+        </div>
+        <div class="ft-cart-list-bar">
+            <div class="ft-cart-none-box" style="display: none">
+                <div class="ft-cart-none">
+                    <i><img src="../img/icon-cart.png"></i>
+                    <span>Your shopping cart is empty.</span>
+                </div>
+                <div class="ft-cart-btn-bar">
+                    <a class="ft-cart-btn" href="#">Go Shopping</a>
+                </div>
+            </div>
+            <div class="ft-cart-list-box">
+                <div class="cart-list-hd clearfix">
+                    <label class="float-left">Item Total</label>
+                    <label class="float-right">
+                        <span class="cart-money">$256.00</span>
+                        <span class="cart-intro t-ellipsis">Excluding Freight</span>
+                    </label>
+                </div>
+                <div class="cart-list-bd ft-overflow">
+                    <div class="cart-shop-list">
+                        <div class="shop-item">
+                            <div class="shop-intro-box clearfix">
+                                <div class="shop-img-box">
+                                    <label class="ft-radio active">
+                                        <input type="checkbox" name="shopItem" value="">
+                                        <span></span>
+                                    </label>
+                                    <div class="shop-img ft-img-box">
+                                        <div class="pro-tips">
+                                            <div class="pro-discount-tips">-50%</div>
+                                        </div>
+                                        <label><img src="../img/cart-pro1.jpg"></label>
+                                    </div>
+                                </div>
+                                <div class="shop-intro">
+                                    <a href="#" class="t-clamp">New Fashion Stainless Steel Practice Training
+                                        Butterfly</a>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Color:</span>
+                                        <span class="i-item-dd t-ellipsis">Brown</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Size:</span>
+                                        <span class="i-item-dd t-ellipsis">15.60</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Quantity:</span>
+                                        <span class="i-item-dd t-ellipsis item-quantity">1</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Sold By:</span>
+                                            <span class="i-item-dd t-ellipsis"><a href="#">JAZZEVAR Official
+                                                Store</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="shop-edit-box clearfix">
+                                    <span class="edit-tips">This item is no longer available<i
+                                            class="ft-sprite"></i></span>
+                                <label class="edit-handle">
+                                    <a class="edit-btn" href="javascript:;"><i class="ft-sprite">编辑</i></a>
+                                    <a class="delete-btn" href="javascript:;"><i class="ft-sprite">删除</i></a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <div class="shop-intro-box clearfix">
+                                <div class="shop-img-box">
+                                    <label class="ft-radio">
+                                        <input type="checkbox" name="shopItem" value="">
+                                        <span></span>
+                                    </label>
+                                    <div class="shop-img ft-img-box">
+                                        <label><img src="../img/cart-pro2.jpg"></label>
+                                    </div>
+                                </div>
+                                <div class="shop-intro">
+                                    <a href="#" class="t-clamp">New Fashion Stainless Steel Practice Training
+                                        Butterfly</a>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Color:</span>
+                                        <span class="i-item-dd t-ellipsis">Brown</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Size:</span>
+                                        <span class="i-item-dd t-ellipsis">15.60</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Quantity:</span>
+                                        <span class="i-item-dd t-ellipsis item-quantity">3</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Sold By:</span>
+                                            <span class="i-item-dd t-ellipsis"><a href="#">JAZZEVAR Official
+                                                Store</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="shop-edit-box clearfix">
+                                <label class="edit-handle">
+                                    <a class="edit-btn" href="javascript:;"><i class="ft-sprite">编辑</i></a>
+                                    <a class="delete-btn" href="javascript:;"><i class="ft-sprite">删除</i></a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <div class="shop-intro-box clearfix">
+                                <div class="shop-img-box">
+                                    <label class="ft-radio">
+                                        <input type="checkbox" name="shopItem" value="">
+                                        <span></span>
+                                    </label>
+                                    <div class="shop-img ft-img-box">
+                                        <label><img src="../img/cart-pro2.jpg"></label>
+                                    </div>
+                                </div>
+                                <div class="shop-intro">
+                                    <a href="#" class="t-clamp">New Fashion Stainless Steel Practice Training
+                                        Butterfly</a>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Color:</span>
+                                        <span class="i-item-dd t-ellipsis">Brown</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Size:</span>
+                                        <span class="i-item-dd t-ellipsis">15.60</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Quantity:</span>
+                                        <span class="i-item-dd t-ellipsis item-quantity">2</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Sold By:</span>
+                                            <span class="i-item-dd t-ellipsis"><a href="#">JAZZEVAR Official
+                                                Store</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="shop-edit-box clearfix">
+                                <label class="edit-handle">
+                                    <a class="edit-btn" href="javascript:;"><i class="ft-sprite">编辑</i></a>
+                                    <a class="delete-btn" href="javascript:;"><i class="ft-sprite">删除</i></a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft-cart-btn-bar">
+                    <a class="ft-cart-btn active" href="#">Checkout ( <i>2</i> )</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--置顶按钮-->
+<a class="pos-fix go-top" href="javascript:;" id="goTop"><img src="../img/icon-top.png"></a>
+
+<script type="text/template" id="productListCont">
+    <li>
+        <a href="#">
+            <div class="pro-box">
+                <label class="pro-img new-pro-img">
+                    <span class="pro-tips">
+                        <span class="pro-discount-tips">-50%</span>
+                    </span>
+                    <img src="../img/pro-error.jpg" data-original="../img/product3.jpg">
+                    <span class="pro-img-loading"></span>
+                </label>
+                <div class="pos-relative">
+                    <label class="pro-name t-clamp">Fashion Stainless Steel Practice Trang Butterfly
+                        KnifePrace...</label>
+                    <div class="pro-intro">
+                        <div class="pro-hots mar-b5 clearfix">
+                            <label class="pro-star star2">
+                                <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                    class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                    class="ft-sprite"></i>
+                            </label>
+                        </div>
+
+                        <label class="pro-price">
+                            <span class="price-new">US$80.00</span>
+                        </label>
+
+                        <span class="pro-collect float-right">
+                            <i class="ft-sprite ft-collect">收藏</i>
+                            <i class="conllect-loading"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</script>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/swiper.jquery.min.js"></script>
+<script src="../js/jquery.lazyload.min.js"></script>
+<script src="../js/box.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        resizeInit(function (w) {
+            setImgContainer(".pro-img", 2, w);
+        });
+
+        //计算图片容器大小$
+        function setImgContainer(ele, row, w) {
+            var $ele = $(ele);
+            $ele.each(function () {
+                $(this).width((w - 20) / row - 5).height((w - 20) / row - 5);
+            });
+        }
+
+
+        //产品图片懒加载
+        proImgLazyLoad(".pro-img", "#ContFlow");
+        //页面滚动
+        var ajaxDataNum = 0, downflag = false;
+        pageScroll({
+            hasTop: true,
+            element: "#ContFlow",
+            ajaxFun: function () {
+                if (!downflag) {
+                    downflag = true;
+                    var list = $("#productListCont").html();
+                    var str = "";
+                    for (var i = 0; i <= 9; i++) {
+                        str += list;
+                    }
+                    setTimeout(function () {
+                        ajaxDataNum++;
+                        if (ajaxDataNum >= 5) {
+                            $(".list-loading").html("No more items");
+                            return false;
+                        }
+                        $(".product-recommend").find("ul").append(str);
+                        setImgContainer(".pro-img", 2, $(window).width());
+                        proImgLazyLoad(".new-pro-img", "#ContFlow", function (ele) {
+                            ele.removeClass("new-pro-img");
+                        });
+                        downflag = false;
+                    }, 1000);
+                }
+            }
+        });
+        //显示左侧菜单
+        popLeftMenu({
+            clickEle: "#menu",
+            diskEle: ".ft-menu-bar",
+            animateEle: ".ft-menu-box",
+            isSwiper: true,
+            swiperID: "#menuBox"
+        });
+        //显示右侧筛选
+        popLeftMenu({
+            clickEle: "#filtrate",
+            diskEle: ".ft-filtrate-bar",
+            animateEle: ".ft-filtrate-box"
+        });
+        //筛选操作
+        filtrateHandle();
+        //显示购物车
+        popLeftMenu({
+            clickEle: "#cart",
+            diskEle: ".ft-cart-bar",
+            animateEle: ".ft-cart-box"
+        });
+        //关闭窗口
+        $(".ft-cart-close a").click(function () {
+            $(".ft-cart-bar").click();
+        });
+        //购物车操作
+        shopCarHandle({
+            deleteFun: function () {
+                if ($(".shop-item").length == 0) {
+                    $(".ft-cart-list-box").hide();
+                    $(".ft-cart-none-box").show();
+                }
+            }
+        });
+        //切换列表
+        $(".product-change").click(function () {
+            $(this).toggleClass("active");
+            $(".product-recommend").toggleClass("active");
+        });
+        //收藏
+        $(document).on("click", ".pro-collect", function (e) {
+            e.stopPropagation();
+            common.preventFun(e);
+            var that = this;
+            $(that).find(".conllect-loading").show();
+            setTimeout(function () {
+                $(that).find(".conllect-loading").hide();
+                $(that).toggleClass("active");
+            }, 300);
+        });
+
+        //下拉选择
+        var $selectBar = $(".ft-watch-select");
+        var $listBar = $(".ft-watch-select-list");
+        $selectBar.click(function () {
+            $(this).find(".arrow-top").toggleClass("active");
+            $listBar.slideToggle(200);
+        });
+
+        $listBar.find("a").click(function () {
+            $(this).addClass("active").parents("li").siblings().find("a").removeClass("active");
+            $selectBar.find("span").text($(this).text());
+            $selectBar.click();
+        });
+    })
+</script>
+</body>
+</html>

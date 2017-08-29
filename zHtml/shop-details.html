@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品-详情</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide ft-theme2 shop-details">
+<!--顶部浮动工具栏-->
+<div class="pos-fix ft-header in-header border">
+    <div class="ft-menu-btn in-left-btn">
+        <a class="in-back-btn" href="javascript:;" id="back">
+            <i class="in-back-icon ft-sprite">返回</i>
+        </a>
+    </div>
+    <span class="ft-head-title in-head-title"><i>Details</i></span>
+    <div class="ft-menu-btn in-right-btn">
+        <a class="in-search-btn" href="javascript:;" id="search">
+            <i class="in-search-icon ft-sprite">搜索</i>
+        </a>
+        <a class="in-cart-btn" href="javascript:;" id="cart">
+            <i class="in-cart-icon ft-sprite">购物车</i>
+            <span class="in-cart-num">9</span>
+        </a>
+    </div>
+</div>
+<!--菜单导航-->
+<div class="pos-fix nav-list">
+    <div class="swiper-container" id="inNav">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide active" data-box="overview">Overview</div>
+            <div class="swiper-slide " data-box="description">Description</div>
+            <div class="swiper-slide " data-box="rating">Product Rating</div>
+            <div class="swiper-slide " data-box="shipping">Shipping Info</div>
+        </div>
+    </div>
+</div>
+<!--页面滚动部分-->
+<div class="ft-wrap ft-overflow ft-overflow-hide background pad-96">
+    <div class="swiper-container product-swiper" id="detailsSp">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="ft-overflow">
+                    <div class="ft-overflow-box">
+                        <!--商品图文综述-->
+                        <div class="ft-height shop-overview" id="overview" style="display: block;">
+                            <div class="details-banner">
+                                <div class="swiper-container" id="detailsBanner">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="pro-discount-tips">-50%</div>
+                                            <a href="#">
+                                                <img class="swiper-lazy" data-src="../img/404-img.png"
+                                                     src="../img/shop-banner-def.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <img class="swiper-lazy" data-src="../img/shop-banner1.jpg"
+                                                     src="../img/shop-banner-def.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <img class="swiper-lazy" data-src="../img/wel-bg.jpg"
+                                                     src="../img/shop-banner-def.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <img class="swiper-lazy" data-src="../img/shop-banner3.jpg"
+                                                     src="../img/shop-banner-def.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination">
+                                        <a class="details-show-big" href="javascript:;"><i class="ft-sprite"></i><span
+                                                id="bannerNum">3</span></a>
+                                        <div class="details-user-handle">
+                                            <a class="details-share" href="javascript:;"><i class="ft-sprite">分享</i></a>
+                                            <a class="details-collect active" href="javascript:;"><i class="ft-sprite">收藏</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-container">
+                                <div class="details-intro">
+                                    <p class="details-name t-clamp">Fashion Stainless Steel Practice Trang Butterfly
+                                        KnifePrace Fashion
+                                        Stainless Steel Practice</p>
+                                    <div class="details-reputation">
+                                        <div class="pro-hots clearfix">
+                                            <label class="pro-star star3">
+                                                <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                    class="ft-sprite"></i><i
+                                                    class="ft-sprite"></i><i class="ft-sprite"></i>
+                                            </label>
+                                            <span class="float-left">( 5643 )</span>
+                                        </div>
+                                    </div>
+                                    <div class="details-store">
+                                        <span>Sold By:</span>
+                                        <a href="#">JAZZEVAR Official Store</a>
+                                    </div>
+                                </div>
+                                <div class="details-comment mar-t10">
+                                    <div class="comment-box">
+                                        <h2 class="comment-title">
+                                            <a href="#">Recent Reviews<i>(930)</i></a>
+                                        </h2>
+                                        <ul class="comment-list">
+                                            <li>
+                                                <div class="comment-intro">
+                                                    <div class="comment-user">
+                                                        <label class="user-head"><img
+                                                                src="../img/header-img1.jpg"></label>
+                                                        <label class="user-name">
+                                                            <span class="comment-user-name t-ellipsis">Jason Smith</span>
+                                                            <span class="comment-time">2017-03-24  12:53:02</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="comment-rank">
+                                                        <div class="pro-hots clearfix">
+                                                            <label class="pro-star star5">
+                                                                <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                                    class="ft-sprite"></i><i
+                                                                    class="ft-sprite"></i><i class="ft-sprite"></i>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-text">
+                                                    <span class="t-clamp">"very happy. Alittle. for price and quality. more the worth hem job very happy. Alittle. for price and"</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="comment-intro">
+                                                    <div class="comment-user">
+                                                        <label class="user-head default"><img
+                                                                src="../img/header-img2.jpg"></label>
+                                                        <label class="user-name">
+                                                            <span class="comment-user-name t-ellipsis">Jason</span>
+                                                            <span class="comment-time">2017-03-24  12:53:02</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="comment-rank">
+                                                        <div class="pro-hots clearfix">
+                                                            <label class="pro-star star4">
+                                                                <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                                    class="ft-sprite"></i><i
+                                                                    class="ft-sprite"></i><i class="ft-sprite"></i>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-text">
+                                                    <span class="t-clamp">"very happy. Alittle. for price and quality. more the worth hem</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="comment-intro">
+                                                    <div class="comment-user">
+                                                        <label class="user-head"><img
+                                                                src="../img/header-img1.jpg"></label>
+                                                        <label class="user-name">
+                                                            <span class="comment-user-name t-ellipsis">Jason Smith</span>
+                                                            <span class="comment-time">2017-03-24  12:53:02</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="comment-rank">
+                                                        <div class="pro-hots clearfix">
+                                                            <label class="pro-star star3">
+                                                                <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                                    class="ft-sprite"></i><i
+                                                                    class="ft-sprite"></i><i class="ft-sprite"></i>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-text">
+                                                    <span class="t-clamp">"very happy. Alittle. for price and quality. more the worth hem job very happy. Alittle. for price and"</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="specification-box">
+                                        <div class="specification-item">
+                                            <span class="specification-hd">Sizes</span>
+                                            <label class="specification-bd">28, 29, 30, 33, 35, 46</label>
+                                        </div>
+                                        <div class="specification-item">
+                                            <span class="specification-hd">Colors</span>
+                                            <label class="specification-bd">Bistre, black, gray, green, khaki,
+                                                lightgreen</label>
+                                        </div>
+                                        <div class="specification-item">
+                            <span class="specification-hd">Estimated Arival<a class="shipping-btn"
+                                                                              href="#">Detail</a></span>
+                                        </div>
+                                        <div class="specification-item">
+                                            <span class="specification-hd">Estimated Shipping<a class="shipping-btn"
+                                                                                                href="#">Detail</a></span>
+                                            <label class="specification-bd">$ 42.00</label>
+                                        </div>
+                                    </div>
+                                    <div class="attestation-box clearfix">
+                                        <label><img src="../img/attestation-img.png"></label>
+                                        <div class="box-table">
+                                            <span class="cell">We guarantee a safe and secure shopping experience so you never have to worry</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-loading"></div>
+                <div class="ft-overflow">
+                    <div class="ft-overflow-box">
+                        <!--商品Description描述-->
+                        <div class="ft-height shop-description img-details" id="description">
+                            <div><p><strong>Material:</strong> Cotton</p>
+                                <p>The size details as below:</p>
+                                <table style="width:100%" interlaced="enabled" border="1">
+                                    <tbody>
+                                    <tr class="ue-table-interlace-color-single firstRow">
+                                        <td style="word-break: break-all; background-color: rgb(242, 220, 219); border-color: rgb(0, 0, 0);"
+                                            width="113" valign="top" height="22"><strong>Size&nbsp;</strong></td>
+                                        <td style="word-break: break-all; background-color: rgb(242, 220, 219); border-color: rgb(0, 0, 0);"
+                                            width="315" valign="top" height="22"><strong>Cloth Length(cm)</strong></td>
+                                        <td style="word-break: break-all; background-color: rgb(242, 220, 219); border-color: rgb(0, 0, 0);"
+                                            width="182" valign="top" height="22"><strong>Bust(cm)</strong></td>
+                                        <td style="word-break: break-all; background-color: rgb(242, 220, 219); border-color: rgb(0, 0, 0);"
+                                            width="202" valign="top" height="22"><strong>Waist(cm)</strong></td>
+                                        <td style="word-break: break-all; background-color: rgb(242, 220, 219); border-color: rgb(0, 0, 0);"
+                                            width="360" valign="top" height="22"><strong>Shoulder Width(cm)</strong>
+                                        </td>
+                                    </tr>
+                                    <tr class="ue-table-interlace-color-double">
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="113"
+                                            valign="top">S
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="315"
+                                            valign="top">54<br></td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="182"
+                                            valign="top">84
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="202"
+                                            valign="top">76<br></td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="360"
+                                            valign="top">35<br></td>
+                                    </tr>
+                                    <tr class="ue-table-interlace-color-single">
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="113"
+                                            valign="top">M
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="315"
+                                            valign="top">55
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="182"
+                                            valign="top">88
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="202"
+                                            valign="top">80<br></td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="360"
+                                            valign="top">36
+                                        </td>
+                                    </tr>
+                                    <tr class="ue-table-interlace-color-double">
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="113"
+                                            valign="top">L
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="315"
+                                            valign="top">56<br></td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="182"
+                                            valign="top">92
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="202"
+                                            valign="top">84
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="360"
+                                            valign="top">37
+                                        </td>
+                                    </tr>
+                                    <tr class="ue-table-interlace-color-single">
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="113"
+                                            valign="top">XL
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="315"
+                                            valign="top">57
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="182"
+                                            valign="top">96
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="202"
+                                            valign="top">88
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="360"
+                                            valign="top">38
+                                        </td>
+                                    </tr>
+                                    <tr class="ue-table-interlace-color-double">
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="113"
+                                            valign="top">XXL
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="315"
+                                            valign="top">58
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="182"
+                                            valign="top">100<br></td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="202"
+                                            valign="top">92
+                                        </td>
+                                        <td style="word-break: break-all; border-color: rgb(0, 0, 0);" width="360"
+                                            valign="top">39
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <p><br></p>
+                                <p><strong><span style="color: rgb(192, 80, 77);">About the size choice, you can contact us for help.</span></strong>
+                                </p>
+                                <p><img style="width:100%" src="../img/shop-banner2.jpg" class="asd"></p>
+                                <p><br></p>
+                                <p><img style="width:100%"
+                                        src="http://cspimg.cqlj023.com/Uploads/Pic/2017/0630/056458BBF409E52B8038DB07BDA5DF29.png"
+                                        title="1.png"></p>
+                                <p><br></p>
+                                <p><img style="width:100%"
+                                        src="http://cspimg.cqlj023.com/Uploads/Pic/2017/0630/39276AAD6B5DCCF613D0A941624BEFD8.png"
+                                        title="2.png"></p>
+                                <p><br></p>
+                                <p><img style="width:100%"
+                                        src="http://cspimg.cqlj023.com/Uploads/Pic/2017/0630/B6586B94C8253F27FE1A72C232A8E989.png"
+                                        title="3.png"></p>
+                                <p><img style="width:100%"
+                                        src="http://cspimg.cqlj023.com/Uploads/Pic/2017/0630/94F43623762475CA2CED441CE87C1525.png"
+                                        title="4.png"></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-loading"></div>
+                <div class="ft-overflow">
+                    <div class="ft-overflow-box">
+                        <!--商品Rating等级-->
+                        <div class="ft-height shop-rating" id="rating">
+                            <div class="rating-bar">
+                                <div class="rating-product">
+                                    <label class="rating-img"><img src="../img/shop-banner2.jpg"></label>
+                                    <div class="pro-hots big-hots clearfix">
+                                        <label class="pro-star star4">
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                            <i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                        </label>
+                                        <span class="pro-star-rating">(5643 ratings)</span>
+                                    </div>
+                                </div>
+                                <div class="rating-intro clearfix">
+                                    <span class="rating-shop-name t-ellipsis">Fashion Stainless Steel Practice Stainless Steel Practice</span>
+                                    <span class="rating-shop-num t-ellipsis">Bought By: 34,666 people</span>
+                                    <span class="rating-shop-num t-ellipsis">Saved By: 124,253 people</span>
+                                    <div class="rating-chart">
+                                        <div class="pro-hots small-hots clearfix">
+                                            <label class="pro-star">
+                                                <i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                                <i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                                <i class="ft-sprite"></i>
+                                            </label>
+                                            <span class="chart-size"><i style="width: 100%"></i></span>
+                                        </div>
+                                        <div class="pro-hots small-hots clearfix">
+                                            <label class="pro-star">
+                                                <i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                                <i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                            </label>
+                                            <span class="chart-size"><i style="width: 60%"></i></span>
+                                        </div>
+                                        <div class="pro-hots small-hots clearfix">
+                                            <label class="pro-star">
+                                                <i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                                <i class="ft-sprite"></i>
+                                            </label>
+                                            <span class="chart-size"><i style="width: 40%"></i></span>
+                                        </div>
+                                        <div class="pro-hots small-hots clearfix">
+                                            <label class="pro-star">
+                                                <i class="ft-sprite"></i><i class="ft-sprite"></i>
+                                            </label>
+                                            <span class="chart-size"><i style="width: 20%"></i></span>
+                                        </div>
+                                        <div class="pro-hots small-hots clearfix">
+                                            <label class="pro-star">
+                                                <i class="ft-sprite"></i>
+                                            </label>
+                                            <span class="chart-size"><i style="width: 10%"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-comment">
+                                <ul class="comment-list">
+                                    <li>
+                                        <div class="comment-intro">
+                                            <div class="comment-user">
+                                                <label class="user-head"><img src="../img/header-img1.jpg"></label>
+                                                <label class="user-name">
+                                                    <span class="comment-user-name t-ellipsis">Jason Smith</span>
+                                                    <span class="comment-time">2017-03-24  12:53:02</span>
+                                                </label>
+                                            </div>
+                                            <div class="comment-rank">
+                                                <div class="pro-hots clearfix">
+                                                    <label class="pro-star star5">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <span class="t-clamp">"very happy. Alittle. for price and quality. more the worth hem job very happy. Alittle. for price and"</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="comment-intro">
+                                            <div class="comment-user">
+                                                <label class="user-head default"><img
+                                                        src="../img/header-img2.jpg"></label>
+                                                <label class="user-name">
+                                                    <span class="comment-user-name t-ellipsis">Jason</span>
+                                                    <span class="comment-time">2017-03-24  12:53:02</span>
+                                                </label>
+                                            </div>
+                                            <div class="comment-rank">
+                                                <div class="pro-hots clearfix">
+                                                    <label class="pro-star star4">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <span class="t-clamp">"very happy. Alittle. for price and quality. more the worth hem</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="comment-intro">
+                                            <div class="comment-user">
+                                                <label class="user-head"><img src="../img/header-img1.jpg"></label>
+                                                <label class="user-name">
+                                                    <span class="comment-user-name t-ellipsis">Jason Smith</span>
+                                                    <span class="comment-time">2017-03-24  12:53:02</span>
+                                                </label>
+                                            </div>
+                                            <div class="comment-rank">
+                                                <div class="pro-hots clearfix">
+                                                    <label class="pro-star star3">
+                                                        <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i
+                                                            class="ft-sprite"></i><i class="ft-sprite"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <span class="t-clamp">"very happy. Alittle. for price and quality. more the worth hem job very happy. Alittle. for price and"</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-loading"></div>
+                <div class="ft-overflow">
+                    <div class="ft-overflow-box">
+                        <!--商品Shipping运费-->
+                        <div class="ft-height shop-shipping" id="shipping">
+                            <div class="shipping-bar">
+                                <div class="order-cost">
+                                    <div class="cost-item no-top no-pad">
+                                        <a class="pad-right" href="#" id="currency">
+                                            <span class="cost-name">Ship To:</span>
+                                            <span class="cost-fee"><img src="../img/currency-icon.png"></span>
+                                            <i class="ft-sprite arrow-icon"></i>
+                                        </a>
+                                    </div>
+                                    <div class="cost-item no-pad">
+                                        <div class="cont">
+                                            <span class="cost-name">Quantity:</span>
+                                            <div class="cost-fee clearfix">
+                                                <a href="javascript:;" class="float-right mar-l10 ft-btn active">Freight</a>
+                                                <div class="shop-num-bar small float-right">
+                                                    <span class="num-cut" href="javascript:;"><i class="ft-sprite"></i></span>
+                                                    <label id="number" class="num-input" data-max="999" data-min="1">
+                                                        <input
+                                                                type="number" value="1"></label>
+                                                    <span class="num-add" href="javascript:;"><i class="ft-sprite"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cost-item no-pad">
+                                        <span class="cost-name height">Shipping Method:</span>
+                                        <table>
+                                            <colgroup>
+                                                <col width="15%">
+                                                <col width="35%">
+                                                <col width="50%">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th>Delivery Time</th>
+                                                <th>Cost</th>
+                                                <th>Tracking Carrier</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>20-39</td>
+                                                <td>Free Shipping</td>
+                                                <td>China Post Ordinary Smal Packet Plus</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20-39</td>
+                                                <td>US$1.81</td>
+                                                <td>China Post Ordinary Smal Packet Plus</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20-39</td>
+                                                <td>Free Shipping</td>
+                                                <td>China Post Ordinary Smal Packet Plus</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20-39</td>
+                                                <td>Free Shipping</td>
+                                                <td>China Post Ordinary Smal Packet Plus</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20-39</td>
+                                                <td>Free Shipping</td>
+                                                <td>China Post Ordinary Smal Packet Plus</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20-39</td>
+                                                <td>Free Shipping</td>
+                                                <td>China Post Ordinary Smal Packet Plus</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--切换内容loading-->
+<div class="classify-loading"></div>
+
+<!--底部购买悬浮-->
+<div class="details-buy">
+    <div class="buy-tips-bar clearfix">
+        <div class="pro-cutdown">
+            <label class="ft-cutdown" data-time="2017/04/26 23:59:59">
+                <span class="ft-time-day" data-format="d">00d</span>:<span class="ft-time-hour"
+                                                                           data-format="h">00h</span>:<span
+                    class="ft-time-minute" data-format="m">00m</span>
+            </label>
+        </div>
+        <span class="buy-tips">Instant offer：add to cart right now to unlock a lower price！</span>
+    </div>
+    <div class="buy-bar">
+        <div class="buy-intro-money">
+            <label class="buy-money">
+                <span>US$80.00</span>
+                <i> US$160.00 </i>
+            </label>
+            <span class="buy-freight">Excluding Freight</span>
+        </div>
+        <a class="buy-btn" href="javascript:;" id="buyBtn"><i>BUY</i></a>
+    </div>
+</div>
+
+<!--下方购物车-->
+<div class="ft-pop-disk ft-cart-bar">
+    <div class="ft-pop-box ft-cart-box animated-bottom">
+        <div class="ft-cart-close">
+            <a href="javascript:;">
+                <i class="ft-sprite"></i>
+                <span>CONTINUE SHOPPING</span>
+            </a>
+        </div>
+        <div class="ft-cart-list-bar">
+            <div class="ft-cart-none-box" style="display: none">
+                <div class="ft-cart-none">
+                    <i><img src="../img/icon-cart.png"></i>
+                    <span>Your shopping cart is empty.</span>
+                </div>
+                <div class="ft-cart-btn-bar">
+                    <a class="ft-cart-btn" href="#">Go Shopping</a>
+                </div>
+            </div>
+            <div class="ft-cart-list-box">
+                <div class="cart-list-hd clearfix">
+                    <label class="float-left">Item Total</label>
+                    <label class="float-right">
+                        <span class="cart-money">$256.00</span>
+                        <span class="cart-intro t-ellipsis">Excluding Freight</span>
+                    </label>
+                </div>
+                <div class="cart-list-bd ft-overflow">
+                    <div class="cart-shop-list">
+                        <div class="shop-item">
+                            <div class="shop-intro-box clearfix">
+                                <div class="shop-img-box">
+                                    <label class="ft-radio active">
+                                        <input type="checkbox" name="shopItem" value="">
+                                        <span></span>
+                                    </label>
+                                    <div class="shop-img ft-img-box">
+                                        <div class="pro-tips">
+                                            <div class="pro-discount-tips">-50%</div>
+                                        </div>
+                                        <label><img src="../img/cart-pro1.jpg"></label>
+                                    </div>
+                                </div>
+                                <div class="shop-intro">
+                                    <a href="#" class="t-clamp">New Fashion Stainless Steel Practice Training
+                                        Butterfly</a>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Color:</span>
+                                        <span class="i-item-dd t-ellipsis">Brown</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Size:</span>
+                                        <span class="i-item-dd t-ellipsis">15.60</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Quantity:</span>
+                                        <span class="i-item-dd t-ellipsis item-quantity">1</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Sold By:</span>
+                                            <span class="i-item-dd t-ellipsis"><a href="#">JAZZEVAR Official
+                                                Store</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="shop-edit-box clearfix">
+                                    <span class="edit-tips">This item is no longer available<i
+                                            class="ft-sprite"></i></span>
+                                <label class="edit-handle">
+                                    <a class="edit-btn" href="javascript:;"><i class="ft-sprite">编辑</i></a>
+                                    <a class="delete-btn" href="javascript:;"><i class="ft-sprite">删除</i></a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <div class="shop-intro-box clearfix">
+                                <div class="shop-img-box">
+                                    <label class="ft-radio">
+                                        <input type="checkbox" name="shopItem" value="">
+                                        <span></span>
+                                    </label>
+                                    <div class="shop-img ft-img-box">
+                                        <label><img src="../img/cart-pro2.jpg"></label>
+                                    </div>
+                                </div>
+                                <div class="shop-intro">
+                                    <a href="#" class="t-clamp">New Fashion Stainless Steel Practice Training
+                                        Butterfly</a>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Color:</span>
+                                        <span class="i-item-dd t-ellipsis">Brown</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Size:</span>
+                                        <span class="i-item-dd t-ellipsis">15.60</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Quantity:</span>
+                                        <span class="i-item-dd t-ellipsis item-quantity">3</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Sold By:</span>
+                                            <span class="i-item-dd t-ellipsis"><a href="#">JAZZEVAR Official
+                                                Store</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="shop-edit-box clearfix">
+                                <label class="edit-handle">
+                                    <a class="edit-btn" href="javascript:;"><i class="ft-sprite">编辑</i></a>
+                                    <a class="delete-btn" href="javascript:;"><i class="ft-sprite">删除</i></a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <div class="shop-intro-box clearfix">
+                                <div class="shop-img-box">
+                                    <label class="ft-radio">
+                                        <input type="checkbox" name="shopItem" value="">
+                                        <span></span>
+                                    </label>
+                                    <div class="shop-img ft-img-box">
+                                        <label><img src="../img/cart-pro2.jpg"></label>
+                                    </div>
+                                </div>
+                                <div class="shop-intro">
+                                    <a href="#" class="t-clamp">New Fashion Stainless Steel Practice Training
+                                        Butterfly</a>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Color:</span>
+                                        <span class="i-item-dd t-ellipsis">Brown</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Size:</span>
+                                        <span class="i-item-dd t-ellipsis">15.60</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Quantity:</span>
+                                        <span class="i-item-dd t-ellipsis item-quantity">2</span>
+                                    </label>
+                                    <label class="intro-item">
+                                        <span class="i-item-dt">Sold By:</span>
+                                            <span class="i-item-dd t-ellipsis"><a href="#">JAZZEVAR Official
+                                                Store</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="shop-edit-box clearfix">
+                                <label class="edit-handle">
+                                    <a class="edit-btn" href="javascript:;"><i class="ft-sprite">编辑</i></a>
+                                    <a class="delete-btn" href="javascript:;"><i class="ft-sprite">删除</i></a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft-cart-btn-bar">
+                    <a class="ft-cart-btn active" href="#">Checkout ( <i>2</i> )</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--下方显示购买信息-->
+<div class="ft-pop-disk ft-buy-bar">
+    <div class="ft-pop-box ft-buy-box animated-bottom">
+        <div class="buy-box-header">
+            <div class="buy-shop">
+                <label><img src="../img/product1.jpg"></label>
+            </div>
+            <div class="buy-intro">
+                <span class="buy-price">US$6.00</span>
+                <span class="buy-name t-clamp">Fashion Stainless Steel Practice Trang Butterfly KnifePrace Fashion Stainless Steel Practice</span>
+                <span class="buy-surplus">Stock：9999</span>
+            </div>
+            <a href="javascript:;" class="buy-close"><i class="ft-sprite"></i></a>
+        </div>
+        <div class="buy-box-cont ft-overflow">
+            <div class="buy-row">
+                <span>Colors</span>
+                <label class="select-style">
+                    <a class="active" href="javascript:;">Red</a>
+                    <a href="javascript:;">Blue</a>
+                    <a href="javascript:;">Yellow</a>
+                    <a href="javascript:;">Green</a>
+                </label>
+            </div>
+            <div class="buy-row">
+                <span>Specification</span>
+                <label class="select-style">
+                    <a class="active" href="javascript:;">Big</a>
+                    <a href="javascript:;">Small</a>
+                    <a href="javascript:;">Middle</a>
+                </label>
+            </div>
+            <div class="buy-row">
+                <span>Classify</span>
+                <label class="select-style">
+                    <a class="active" href="javascript:;">23-26mm</a>
+                    <a href="javascript:;">26-29mm</a>
+                    <a href="javascript:;">26-29mm</a>
+                    <a href="javascript:;">26-29mm</a>
+                </label>
+            </div>
+            <div class="buy-row">
+                <div class="buy-number">
+                    <span>Buy Numnber</span>
+                    <div class="number-box pos-abs-tr">
+                        <div class="shop-num-bar">
+                            <a class="num-cut" href="javascript:;"><i class="ft-sprite"></i></a>
+                            <label class="num-input" data-max="999" data-min="1"> <input type="number"
+                                                                                         value="1"></label>
+                            <a class="num-add" href="javascript:;"><i class="ft-sprite"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy-box-footer buy-bar">
+            <a href="javascript:;" class="buy-btn">Ensure</a>
+        </div>
+    </div>
+</div>
+<!--下方运费详情-->
+<div class="ft-pop-disk shipping-pop-disk">
+    <div class="shop-shipping-box animated-bottom">
+        <div class="pos-abs-tl ft-disk-hd shipping-hd">
+            <a class="ft-close-btn" href="javascript:;"><i class="ft-sprite"></i></a>
+            <span class="ft-disk-title">Return Policy</span>
+        </div>
+        <div class="ft-disk-bd">
+            <div class="ft-overflow shipping-bd">
+                <div class="ft-overflow-box">
+                    <div class="shipping-cont">
+                        <p>We want you to be completely satisfied with your purchase on wish.</p>
+                        <p>You may return all products within 30 days of delivery.We want you to be completely satisfied
+                            with your purchase on wish.</p>
+                        <p>You may return all products within 30 days of delivery. We want you to be completely
+                            satisfied
+                            with your purchase on wish. You may return all products within 30 days of delivery. We want
+                            you
+                            to be completely satisfied with your purchase on wish.</p>
+                        <p>You may return all products within 30 days of delivery. We want you to be completely
+                            satisfied
+                            with your purchase on wish. You may return all products within 30 days of delivery. We want
+                            you
+                            to be completely satisfied with your purchase on wish. You may return all products within 30
+                            days of delivery.</p>
+                        <p>We want you to be completely satisfied with your purchase on wish.</p>
+                        <p>You may return all products within 30 days of delivery.We want you to be completely satisfied
+                            with your purchase on wish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--显示产品大图-->
+<div class="ft-pop-disk product-big animated-left">
+    <div class="ft-pop-box">
+        <div class="ft-disk-hd">
+            <span class="ft-disk-title" id="productLength"><i>12</i> of <i>12</i></span>
+            <a class="ft-close-btn"><i class="ft-sprite"></i></a>
+        </div>
+        <div class="ft-disk-bd">
+            <div class="product-big-list">
+                <div class="swiper-container" id="productBig">
+                    <div class="swiper-wrapper"></div>
+                    <div class='swiper-loading'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--设置货币-->
+<div class="ft-pop-disk ft-currency-bar">
+    <div class="ft-pop-box ft-currency-box animated-bottom">
+        <div class="ft-wrap height top">
+            <!--顶部悬浮导航-->
+            <div class="ft-head-nav">
+                <span class="ft-head-text">Currency</span>
+                <a class="ft-close-btn right" href="javascript:;"><i class="ft-sprite"></i></a>
+            </div>
+            <!--中间滚动内容-->
+            <div class="ft-container no-padding height background">
+                <div class="ft-overflow background">
+                    <div class="ft-module no-mar no-border currency-module">
+                        <div class="module-hd">
+                            <span class="specail">Current Currency: </span>
+                            <label id="currencyType">USD</label>
+                        </div>
+                        <div class="module-bd no-pad">
+                            <div class="currency-list box-list">
+                                <ul class="row-2">
+                                    <li>
+                                        <a class="active" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="javascript:;">
+                                            <img src="../img/currency-icon.png">
+                                            <i>USD</i><em>US$</em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--置顶按钮-->
+<a class="pos-fix go-top" href="javascript:;" id="goTop"><img src="../img/icon-top.png"></a>
+<!--提示信息-->
+<div class="ft-pop-disk ft-details-bar">
+    <div class="ft-pop-box ft-details-box">
+        <label>
+            <img src="../img/details-tips.png">
+            <a href="javascript:;">Done</a>
+        </label>
+    </div>
+</div>
+
+<script type="text/template" id="productListCont">
+    <li>
+        <a href="#">
+            <div class="pro-box">
+                <label class="pro-img new-pro-img">
+                    <span class="pro-tips">
+                        <span class="pro-discount-tips">-50%</span>
+                    </span>
+                    <img src="../img/pro-error.jpg" data-original="../img/product3.jpg">
+                    <span class="pro-img-loading"></span>
+                </label>
+                <div class="pos-relative">
+                    <label class="pro-name t-clamp">Fashion Stainless Steel Practice Trang Butterfly
+                        KnifePrace...</label>
+                    <div class="pro-intro">
+                        <div class="pro-hots mar-b5 clearfix">
+                            <label class="pro-star star2">
+                                <i class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                    class="ft-sprite"></i><i class="ft-sprite"></i><i
+                                    class="ft-sprite"></i>
+                            </label>
+                        </div>
+
+                        <label class="pro-price">
+                            <span class="price-new">US$80.00</span>
+                        </label>
+
+                        <span class="pro-collect float-right">
+                            <i class="ft-sprite ft-collect">收藏</i>
+                            <i class="conllect-loading"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</script>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/swiper.jquery.min.js"></script>
+<script src="../js/jquery.lazyload.min.js"></script>
+<script src="../js/box.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        //横向菜单
+        var nav = slideHorizontalNav("#inNav", {
+            initFun: function (index) {
+                if (index == 0) {
+                    createSwiper();
+                }
+            },
+            clickFun: function (index) {
+                //切换内容
+                details.slideTo(index)
+            }
+        });
+
+        var _clear_timer_ = 0;
+        var details = common.newSwiper("#detailsSp", 1, {
+            autoplay: 0,
+            pagination: null,
+            loop: false,
+            autoplayDisableOnInteraction: false,
+            lazyLoading: false,
+            onInit: function (s) {
+                s.container.find(".swiper-slide .ft-height").each(function () {
+                    if ($(this).css("display") == "block") {
+                        $(this).parents(".swiper-slide").find(".swiper-loading").hide();
+                    }
+                });
+            },
+            onSlideChangeEnd: function (s) {
+                clearTimeout(_clear_timer_);
+                nav.element[s.activeIndex].click();
+                var $container = s.container;
+                var $active = $container.find(".swiper-slide-active");
+                var $loading = $active.find(".swiper-loading");
+
+                if ($loading.css("display") == "block") {
+                    _clear_timer_ = setTimeout(function () {
+                        $loading.hide();
+                    }, 1000);
+                }
+            }
+        });
+
+        //swiper
+        var _bannerBox;
+
+        function createSwiper() {
+            if (!_bannerBox) {
+                _bannerBox = publicFuns.newSwiper("#detailsBanner", 1, {
+                    autoplay: 0,
+                    pagination: ".swiper-pagination",
+                    paginationType: "custom",
+                    onLazyImageReady: function (swiper, slide, image) {
+                        common.setImageLayout($(slide).find("img")[0], swiper.container.width(), swiper.container.width(), $(slide).find("img").width(), $(slide).find("img").height());
+                    }
+                });
+            }
+        }
+
+        //分享和收藏需要阻止冒泡
+        $(document).on("click", ".details-share", function (e) {
+            e.stopPropagation();
+            $.jConfirm("Share To", [
+                {
+                    text: "<img src='../img/s-facebook.png'>Facebook",
+                    src: "#",
+                    cls: "share-btn",
+                    callback: function () {
+                        console.log("Facebook Share");
+                    }
+                },
+                {
+                    text: "<img src='../img/s-twitter.png'>Twitter",
+                    src: "#",
+                    cls: "share-btn",
+                    callback: function () {
+                        console.log("Twitter Share");
+                    }
+                },
+                {
+                    text: "<img src='../img/s-linkedin.png'>Linkedln",
+                    src: "#",
+                    cls: "share-btn",
+                    callback: function () {
+                        console.log("Linkedln Share");
+                    }
+                },
+                {
+                    text: "<img src='../img/s-email.png'>Email",
+                    src: "#",
+                    cls: "share-btn last",
+                    callback: function () {
+                        console.log("Email Share");
+                    }
+                },
+                {
+                    text: "Cancel",
+                    src: "#",
+                    cls: "cancel-btn",
+                    callback: function () {
+                        console.log("Cancel");
+                    }
+                }
+            ], "V", [], {
+                width: 240,
+                cls: {
+                    tipsBarCls: "share-title",
+                    boxCls: "share-box"
+                }
+            });
+        });
+        $(document).on("click", ".details-collect", function (e) {
+            e.stopPropagation();
+        });
+
+        //显示产品大图
+        $(document).on("click", "#detailsBanner", function (e) {
+            var that = this;
+            e.stopPropagation();
+            showBigImg({
+                swiperEle: _bannerBox,
+                clickEle: that,
+                animateEle: ".product-big"
+            })
+        });
+
+        //展示商品详情-放大图片
+        var $details = $("#description");
+        var $img = $details.find("img");
+        $img.each(function () {
+            var that = this;
+            if ($(that).attr("class")) {
+                $(that).attr("data-index", 0);
+                $(that).attr("data-scale", false);
+            } else {
+                $(that).attr("data-scale", true);
+            }
+        });
+
+        $details.find("img[data-scale=true]").each(function (i) {
+            $(this).attr("data-index", i + 1);
+            var length = $("#description").find("img:not([class])").length;
+            $(this).on("click", function (e) {
+                e.stopPropagation();
+                showBigImg({
+                    imgIndex: i,
+                    imgNumber: length,
+                    swiperEle: null,
+                    clickEle: this,
+                    animateEle: ".product-big"
+                })
+            })
+        });
+
+        //显示优惠券
+        var coupons = $(".ft-details-bar");
+        var handle = $(".details-user-handle");
+        $(window).resize(function () {
+            coupons.find(".ft-details-box label").css({
+                top: handle.offset().top - 57 + "px",
+                left: handle.offset().left - 169 + "px"
+            });
+        }).trigger("resize");
+        $(".ft-details-box a").click(function () {
+            coupons.hide();
+        });
+        //coupons.show();
+        //显示购买信息
+        popLeftMenu({
+            clickEle: "#buyBtn",
+            diskEle: ".ft-buy-bar",
+            animateEle: ".ft-buy-box"
+        });
+        //关闭窗口
+        $(".buy-close").click(function () {
+            $(".ft-buy-bar").click();
+        });
+        //跳转到运费
+        $(".shipping-btn").click(function () {
+            $("#inNav").find(".swiper-slide[data-box='shipping']").click();
+        });
+        //显示运费详情
+        popLeftMenu({
+            clickEle: ".shipping-details",
+            diskEle: ".shipping-pop-disk",
+            animateEle: ".shop-shipping-box"
+        });
+        //关闭窗口
+        $(".ft-close-btn").click(function () {
+            $(".shipping-pop-disk").click();
+        });
+        //显示购物车
+        popLeftMenu({
+            clickEle: "#cart",
+            diskEle: ".ft-cart-bar",
+            animateEle: ".ft-cart-box"
+        });
+        //关闭窗口
+        $(".ft-cart-close a").click(function () {
+            $(".ft-cart-bar").click();
+        });
+        //购物车操作
+        shopCarHandle({
+            deleteFun: function () {
+                if ($(".shop-item").length == 0) {
+                    $(".ft-cart-list-box").hide();
+                    $(".ft-cart-none-box").show();
+                }
+            }
+        });
+        //设置货币
+        popLeftMenu({
+            clickEle: "#currency",
+            diskEle: ".ft-currency-bar",
+            animateEle: ".ft-currency-box"
+        });
+        //关闭窗口
+        $(".ft-close-btn.right").click(function () {
+            $(".ft-currency-bar").click();
+        });
+        $(".currency-list a").click(function () {
+            var currency = $(this).find("i").text();
+            $(this).addClass("active").parents("li").siblings().find("a").removeClass("active");
+            $("#currencyType").text(currency);
+        });
+
+
+        /**
+         * 触发回调
+         */
+            //输入数量-限制输入
+        $(document).on("change keyup", "#number input", function () {
+            console.log(0);
+        });
+
+        //绑定减数量
+        $(document).on("click", "span.num-cut", function () {
+            var that = this;
+            var tag = $(this).nextAll(".num-input");
+            $(that).nextAll("a.num-add").removeClass('none');
+            common.numberCalculate(tag, Number(tag.data("max")), Number(tag.data("min")), "cut", function (num) {
+                if (num == 1) {
+                    $(that).addClass("none");
+                } else {
+                    $(that).removeClass("none");
+                }
+            });
+        });
+
+        //绑定加数量
+        $(document).on("click", "span.num-add", function () {
+            var that = this;
+            var tag = $(this).prevAll(".num-input");
+            $(that).prevAll("a.num-cut").removeClass('none');
+            common.numberCalculate(tag, Number(tag.data("max")), Number(tag.data("min")), "add", function (num, max) {
+                if (num == max) {
+                    $(that).addClass("none");
+                } else {
+                    $(that).removeClass("none");
+                }
+            });
+        });
+    })
+</script>
+</body>
+</html>

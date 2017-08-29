@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品-分类</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide">
+<!--分类列表-->
+<div class="ft-overflow-hide ft-theme2">
+    <!--顶部浮动工具栏-->
+    <div class="pos-fix ft-header in-header shadow">
+        <div class="ft-menu-btn in-left-btn">
+            <a class="in-menu-btn" href="javascript:;" id="menu">
+                <i class="in-menu-icon ft-sprite">菜单</i>
+            </a>
+            <a class="in-cart-btn" href="javascript:;" id="cart">
+                <i class="in-cart-icon ft-sprite">购物车</i>
+                <span class="in-cart-num">99+</span>
+            </a>
+        </div>
+        <span class="ft-head-title in-head-title"><img src="../img/ft-logo2.png"></span>
+        <div class="ft-menu-btn in-right-btn">
+            <a class="in-search-btn" href="javascript:;" id="search">
+                <i class="in-search-icon ft-sprite">搜索</i>
+            </a>
+            <a class="in-refresh-btn" href="javascript:;" id="refresh">
+                <i class="in-refresh-icon ft-sprite">刷新</i>
+            </a>
+        </div>
+    </div>
+    <div class="classify-bar">
+        <div class="classify-menu">
+            <div class="swiper-container" id="classifyMenu">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide active">
+                        <a class="box-table" href="#">
+                             <span class="cell">
+                                <i class="ft-sprite classify-icon classify-icon1"></i>
+                                <em>Office Supplies</em>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="box-table" href="#">
+                            <span class="cell">
+                                <i class="ft-sprite classify-icon classify-icon2"></i>
+                                <em>Clothing,  Shoes & Accessories</em>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="box-table" href="#">
+                             <span class="cell">
+                                <i class="ft-sprite classify-icon classify-icon3"></i>
+                                <em>Cell Phones & PDAs</em>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="box-table" href="#">
+                             <span class="cell">
+                                <i class="ft-sprite classify-icon classify-icon4"></i>
+                                <em>Video Games Toys & Hobbies</em>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="box-table" href="#">
+                            <span class="cell">
+                                <i class="ft-sprite classify-icon classify-icon5"></i>
+                                <em>Computers & Networking</em>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="box-table" href="#">
+                            <span class="cell">
+                                <i class="ft-sprite classify-icon classify-icon6"></i>
+                                <em>Sporting Goods</em>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="classify-content">
+            <div class="classify-loading"></div>
+            <div class="swiper-container" id="classifyCont">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">All</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">Office Supplies</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">Clothing, Shoes & Accessories</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">Cell Phones & PDAs</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">Video Games</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">Toys & Hobbies</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">Computers & Networking</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">Sporting Goods</a>
+                    </div>
+                </div>
+            </div>
+            <a class="classify-close black" href="javascript:;"><i class="ft-sprite">关闭</i></a>
+        </div>
+    </div>
+    <!--左侧侧滑菜单-->
+    <div class="ft-pop-disk ft-menu-bar">
+        <div class="ft-pop-box ft-menu-box animated-right">
+            <div class="ft-personal">
+                <label class="personal-img"><img src="../img/user-headImg.jpg"></label>
+                <div class="ft-user-name">
+                    <label class="presonal-intro">
+                        <span>Wangyi</span>
+                        <a href="#">Edit Profile<i class="ft-sprite"></i></a>
+                    </label>
+                </div>
+            </div>
+            <div class="personal-nav">
+                <div class="swiper-container" id="menuBox">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <i class="ft-sprite menu-icon1"></i>
+                                <span>Browse</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <i class="ft-sprite menu-icon2"></i>
+                                <span>Search</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <i class="ft-sprite menu-icon3"></i>
+                                <span>Cart</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <i class="ft-sprite menu-icon4"></i>
+                                <span>Orders</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <i class="ft-sprite menu-icon5"></i>
+                                <span>Coupons</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <i class="ft-sprite menu-icon6"></i>
+                                <span>Wishlist</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <i class="ft-sprite menu-icon7"></i>
+                                <span>Wallet</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <i class="ft-sprite menu-icon8"></i>
+                                <span>Settings</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <i class="ft-sprite menu-icon9"></i>
+                                <span>About Us</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <i class="ft-sprite menu-icon10"></i>
+                                <span>Customer Services</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--下方购物车-->
+    <div class="ft-pop-disk ft-cart-bar">
+        <div class="ft-pop-box ft-cart-box animated-bottom">
+            <div class="ft-cart-close">
+                <a href="javascript:;">
+                    <i class="ft-sprite"></i>
+                    <span>CONTINUE SHOPPING</span>
+                </a>
+            </div>
+            <div class="ft-cart-list-bar">
+                <div class="ft-cart-none-box" style="display: none">
+                    <div class="ft-cart-none">
+                        <i><img src="../img/icon-cart.png"></i>
+                        <span>Your shopping cart is empty.</span>
+                    </div>
+                    <div class="ft-cart-btn-bar">
+                        <a class="ft-cart-btn" href="#">Go Shopping</a>
+                    </div>
+                </div>
+                <div class="ft-cart-list-box">
+                    <div class="cart-list-hd clearfix">
+                        <label class="float-left">Item Total</label>
+                        <label class="float-right">
+                            <span class="cart-money">$256.00</span>
+                            <span class="cart-intro t-ellipsis">Excluding Freight</span>
+                        </label>
+                    </div>
+                    <div class="cart-list-bd ft-overflow">
+                        <div class="cart-shop-list">
+                            <div class="shop-item">
+                                <div class="shop-intro-box clearfix">
+                                    <div class="shop-img-box">
+                                        <label class="ft-radio active">
+                                            <input type="checkbox" name="shopItem" value="">
+                                            <span></span>
+                                        </label>
+                                        <div class="shop-img ft-img-box">
+                                            <div class="pro-tips">
+                                                <div class="pro-discount-tips">-50%</div>
+                                            </div>
+                                            <label><img src="../img/cart-pro1.jpg"></label>
+                                        </div>
+                                    </div>
+                                    <div class="shop-intro">
+                                        <a href="#" class="t-clamp">New Fashion Stainless Steel Practice Training
+                                            Butterfly</a>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Color:</span>
+                                            <span class="i-item-dd t-ellipsis">Brown</span>
+                                        </label>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Size:</span>
+                                            <span class="i-item-dd t-ellipsis">15.60</span>
+                                        </label>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Quantity:</span>
+                                            <span class="i-item-dd t-ellipsis item-quantity">1</span>
+                                        </label>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Sold By:</span>
+                                            <span class="i-item-dd t-ellipsis"><a href="#">JAZZEVAR Official
+                                                Store</a></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="shop-edit-box clearfix">
+                                    <span class="edit-tips">This item is no longer available<i
+                                            class="ft-sprite"></i></span>
+                                    <label class="edit-handle">
+                                        <a class="edit-btn" href="javascript:;"><i class="ft-sprite">编辑</i></a>
+                                        <a class="delete-btn" href="javascript:;"><i class="ft-sprite">删除</i></a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="shop-item">
+                                <div class="shop-intro-box clearfix">
+                                    <div class="shop-img-box">
+                                        <label class="ft-radio">
+                                            <input type="checkbox" name="shopItem" value="">
+                                            <span></span>
+                                        </label>
+                                        <div class="shop-img ft-img-box">
+                                            <label><img src="../img/cart-pro2.jpg"></label>
+                                        </div>
+                                    </div>
+                                    <div class="shop-intro">
+                                        <a href="#" class="t-clamp">New Fashion Stainless Steel Practice Training
+                                            Butterfly</a>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Color:</span>
+                                            <span class="i-item-dd t-ellipsis">Brown</span>
+                                        </label>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Size:</span>
+                                            <span class="i-item-dd t-ellipsis">15.60</span>
+                                        </label>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Quantity:</span>
+                                            <span class="i-item-dd t-ellipsis item-quantity">3</span>
+                                        </label>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Sold By:</span>
+                                            <span class="i-item-dd t-ellipsis"><a href="#">JAZZEVAR Official
+                                                Store</a></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="shop-edit-box clearfix">
+                                    <label class="edit-handle">
+                                        <a class="edit-btn" href="javascript:;"><i class="ft-sprite">编辑</i></a>
+                                        <a class="delete-btn" href="javascript:;"><i class="ft-sprite">删除</i></a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="shop-item">
+                                <div class="shop-intro-box clearfix">
+                                    <div class="shop-img-box">
+                                        <label class="ft-radio">
+                                            <input type="checkbox" name="shopItem" value="">
+                                            <span></span>
+                                        </label>
+                                        <div class="shop-img ft-img-box">
+                                            <label><img src="../img/cart-pro2.jpg"></label>
+                                        </div>
+                                    </div>
+                                    <div class="shop-intro">
+                                        <a href="#" class="t-clamp">New Fashion Stainless Steel Practice Training
+                                            Butterfly</a>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Color:</span>
+                                            <span class="i-item-dd t-ellipsis">Brown</span>
+                                        </label>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Size:</span>
+                                            <span class="i-item-dd t-ellipsis">15.60</span>
+                                        </label>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Quantity:</span>
+                                            <span class="i-item-dd t-ellipsis item-quantity">2</span>
+                                        </label>
+                                        <label class="intro-item">
+                                            <span class="i-item-dt">Sold By:</span>
+                                            <span class="i-item-dd t-ellipsis"><a href="#">JAZZEVAR Official
+                                                Store</a></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="shop-edit-box clearfix">
+                                    <label class="edit-handle">
+                                        <a class="edit-btn" href="javascript:;"><i class="ft-sprite">编辑</i></a>
+                                        <a class="delete-btn" href="javascript:;"><i class="ft-sprite">删除</i></a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ft-cart-btn-bar">
+                        <a class="ft-cart-btn active" href="#">Checkout ( <i>2</i> )</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/swiper.jquery.min.js"></script>
+<script src="../js/jquery.lazyload.min.js"></script>
+<script src="../js/box.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        //swiper
+        var _menu = publicFuns.newSwiper("#classifyMenu", 3);
+        var _cont = publicFuns.newSwiper("#classifyCont", 3);
+
+        //菜单操作
+        var $menu = $(".classify-menu"), $cont = $(".classify-content");
+        $menu.on("click", ".swiper-slide", function () {
+            if ($(this).hasClass("active")) return false;
+            $(this).addClass("active").siblings().removeClass("active");
+            $cont.find(".classify-loading").show();
+            setTimeout(function () {
+                $cont.find(".classify-loading").hide();
+                var newCont = "";
+                for (var i = 0; i <= 20; i++) {
+                    newCont += '<div class="swiper-slide"><a href="#">new Menu ' + publicFuns.padZero((i + 1), 2) + '</a></div>';
+                }
+
+                $cont.find(".swiper-wrapper").empty().append(newCont);
+                _cont.update(true);
+                _cont.setWrapperTranslate(0);
+            }, 500);
+        });
+
+        //显示左侧菜单
+        popLeftMenu({
+            clickEle: "#menu",
+            diskEle: ".ft-menu-bar",
+            animateEle: ".ft-menu-box",
+            isSwiper: true,
+            swiperID: "#menuBox"
+        });
+        //显示购物车
+        popLeftMenu({
+            clickEle: "#cart",
+            diskEle: ".ft-cart-bar",
+            animateEle: ".ft-cart-box"
+        });
+        //关闭窗口
+        $(".ft-cart-close a").click(function () {
+            $(".ft-cart-bar").click();
+        });
+        //购物车操作
+        shopCarHandle({
+            deleteFun: function () {
+                if ($(".shop-item").length == 0) {
+                    $(".ft-cart-list-box").hide();
+                    $(".ft-cart-none-box").show();
+                }
+            }
+        });
+    })
+</script>
+</body>
+</html>

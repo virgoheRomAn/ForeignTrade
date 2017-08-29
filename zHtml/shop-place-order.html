@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品-订单支付</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide">
+<div class="ft-wrap height top">
+    <!--顶部悬浮导航-->
+    <div class="ft-head-nav">
+        <a class="ft-h-back" href="javascript:;">返回</a>
+        <span class="ft-head-text">Place Order</span>
+    </div>
+    <!--中间滚动内容-->
+    <div class="ft-container no-padding height background">
+        <div class="ft-overflow">
+            <div class="ft-pay-order">
+                <div class="ft-wrap">
+                    <div class="ft-pay-cont">
+                        <span class="ft-pay-title">支付剩余时间</span>
+                        <div class="ft-pay-time split-time">
+                            <span class="ft-pay-span minutes-bar">
+                                <i>3</i>
+                                <i>0</i>
+                            </span>
+                            <em>：</em>
+                            <span class="ft-pay-span seconds-bar">
+                                <i>0</i>
+                                <i>0</i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ft-pay-money">
+                        <span>支付金额:</span>
+                        <span class="float-right color-orange">US$500.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-module no-mar no-border area-module">
+                <div class="area-form">
+                    <form method="post" action="" novalidate="novalidate" enctype="multipart/form-data">
+                        <div class="ft-module pay-module no-top">
+                            <div class="module-hd background has-icon">
+                                <i class="ft-sprite pay-icon"></i>
+                                <label>Payment method</label>
+                            </div>
+                            <div class="module-bd no-pad">
+                                <ul class="pay-list">
+                                    <li>
+                                        <div class="pay-name float-left">
+                                            <i class="ft-sprite wallet-icon"></i>
+                                            <span>My wallet</span>
+                                        </div>
+                                        <div class="select-bar float-right">
+                                            <span>US$500.00</span>
+                                            <label class="ft-radio">
+                                                <input type="radio" name="payMethod" value="">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pay-name float-left">
+                                            <i class="ft-sprite pal-icon"></i>
+                                            <span>PayPal</span>
+                                        </div>
+                                        <div class="select-bar">
+                                            <label class="ft-radio active">
+                                                <input type="radio" name="payMethod" value="" checked>
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pay-name float-left">
+                                            <i class="ft-sprite card-icon"></i>
+                                            <span>Credit or Debit Card</span>
+                                        </div>
+                                        <div class="select-bar">
+                                            <label class="ft-radio">
+                                                <input type="radio" name="payMethod" value="">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="area-item background pad-all15">
+                            <a class="ft-cart-btn active" id="submit" href="javascript:;">Submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/box.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        //显示倒计时
+        common.timeCountDown(".ft-pay-time", 30*60, function () {
+            console.log("倒计时结束！");
+        });
+        //弹出框
+        $("#submit").click(function () {
+            if ($(".pay-list li:eq(0)").find(".ft-radio").hasClass("active")) {
+                var money = $(".buy-money span").text();
+                var payStr = "\
+                    <div class='pay-disk'>\
+                        <p class='pay-money'><span>Total amount :</span>" + money + "</p>\
+                        <label class='pay-password'><input type='password' value='' placeholder='Payment Password'></label>\
+                        <span class='pay-tips'>First enter the password will be set as your default payment of a password.</span>\
+                    </div>\
+                   ";
+                $.jConfirm({
+                    title: "Paid by Wallet Balance",
+                    intro: payStr
+                }, [
+                    {
+                        text: "Cancel",
+                        css: {
+                            "color": "#666666"
+                        }
+                    },
+                    {
+                        text: "Place Order",
+                        callback: function () {
+                            console.log("付款咯~");
+                        }
+                    }
+                ], "H", "", {
+                    width: 250,
+                    titleCss: {"borderBottom": "1px solid #dcdcdc", "padding": "13px 0 10px 0", "margin": "0"},
+                    tipsBarCss: {"paddingBottom": "0"}
+                });
+            }
+        });
+        //单选
+        selectRadio(".pay-list li");
+    })
+</script>
+</body>
+</html>
