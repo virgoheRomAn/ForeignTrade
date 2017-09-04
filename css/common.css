@@ -462,6 +462,10 @@ ul, li {
     font-weight: normal !important;
 }
 
+.t-size12 {
+    font-size: 1.2rem !important;
+}
+
 .t-size14 {
     font-size: 1.4rem !important;
 }
@@ -485,6 +489,11 @@ ul, li {
 .color-gray-999 {
     color: #999999 !important;
 }
+
+.color-blue {
+    color: #23a0ff !important;
+}
+
 
 /*布局位置*/
 .pos-relative {
