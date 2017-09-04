@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db6ba961-3da7-4060-a941-5d59367ef781" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/animate.min.css" afterPath="$PROJECT_DIR$/css/animate.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/app.css" afterPath="$PROJECT_DIR$/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/swiper.min.css" afterPath="$PROJECT_DIR$/css/swiper.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/swiper.jquery.min.js" afterPath="$PROJECT_DIR$/js/swiper.jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/touch-0.2.14.min.js" afterPath="$PROJECT_DIR$/js/touch-0.2.14.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zHtml/shop-details.html" afterPath="$PROJECT_DIR$/zHtml/shop-details.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,6 +53,11 @@
               <item name="GitHub-OnSkyShell" type="b2602c69:ProjectViewProjectNode" />
               <item name="GitHub-OnSkyShell" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GitHub-OnSkyShell" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitHub-OnSkyShell" type="462c0819:PsiDirectoryNode" />
+              <item name="zHtml" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -95,12 +91,20 @@
       <option name="presentableId" value="Default" />
       <updated>1504240486227</updated>
       <workItem from="1504240488005" duration="14000" />
-      <workItem from="1504487318771" duration="62000" />
+      <workItem from="1504487318771" duration="190000" />
     </task>
+    <task id="LOCAL-00001" summary="修改新增  提现-shop-cash.html">
+      <created>1504487434657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1504487434657</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76000" />
+    <option name="totallyTimeSpent" value="204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1538" height="916" extended-state="6" />
@@ -128,6 +132,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改新增  提现-shop-cash.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改新增  提现-shop-cash.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
