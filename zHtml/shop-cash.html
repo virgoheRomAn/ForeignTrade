@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品-提现</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/app.css?a=1111"/>
+</head>
+<body class="isHide">
+<div class="ft-wrap height top">
+    <!--顶部悬浮导航-->
+    <div class="ft-head-nav">
+        <a class="ft-h-back" href="javascript:;">返回</a>
+        <span class="ft-head-text">提现</span>
+    </div>
+    <!--中间滚动内容-->
+    <div class="ft-container no-padding height background">
+        <div class="ft-overflow">
+            <div class="ft-module no-mar no-border area-module">
+                <div class="no-area">
+                    <div class="module-hd">
+                        <label>收款账户</label>
+                    </div>
+                    <div class="module-bd no-pad">
+                        <div class="area-form">
+                            <form method="post" action="" novalidate="novalidate" enctype="multipart/form-data">
+                                <div class="area-item">
+                                    <label class="form-input">
+                                        <input type="text" placeholder="输入PayPal账户" value="">
+                                    </label>
+                                </div>
+                                <p class="area-tips">请核实到款账户与提现金额是否有误，一经提现申请后无法修改信息</p>
+                                <div class="area-item border">
+                                    <label class="form-input big">
+                                        <span class="form-input-title color-gray-666">提现金额</span>
+                                        <span class="form-input-cont">
+                                            <input type="text" value="" placeholder="输入提现金额">
+                                             <a href="javascript:;"><i class="ft-sprite"></i></a>
+                                        </span>
+                                    </label>
+                                    <label class="form-input small-input">
+                                        <span class="color-gray-666">钱包余额：<em class="color-orange">US$8900.00</em></span>
+                                    </label>
+                                </div>
+                                <div class="area-item background pad-all15 mar-t20">
+                                    <a class="ft-cart-btn active" href="javascript:;">确认提现</a>
+                                    <div class="payment-cont wallet-mine">
+                                        <label class="payment-text">
+                                            <span class="color-gray-666">Tip:单次最高提现为<b class=" color-orange">$500</b>,一天只能提现1次</span>
+                                            <span class="color-gray-666">Any questions,please <a class="color-blue" href="#">contact us</a></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/ft-common.js"></script>
+<script src="../js/pageScript.js"></script>
+<script>
+    $(function () {
+        //单选
+        selectRadio(".pay-list li");
+        //下拉框
+        var $selcet = $(".form-select select");
+        $selcet.change(function () {
+            var _val = $(this).find("option:selected").val();
+            var _text = $(this).find("option:selected").text();
+            $(this).parents(".form-select").addClass("active").find("span").text(_text).data("value", _val);
+        });
+        $selcet.blur(function () {
+            $(this).change();
+        });
+        //清除输入内容
+        var $input = $(".form-input").find("input");
+        $input.focus(function () {
+            if ($(this).parents(".form-input-cont").length != 0) {
+                $(this).parents(".form-input-cont").addClass("active");
+            }
+        }).blur(function (e) {
+            var that=this;
+            e.stopPropagation();
+            setTimeout(function () {
+                $(that).parents(".form-input-cont").removeClass("active");
+            }, 10);
+        });
+
+
+        $(document).on("click", ".form-input-cont.active a", function (e) {
+            e.stopPropagation();
+            common.clearText($(this).prev());
+        });
+    })
+</script>
+</body>
+</html>
