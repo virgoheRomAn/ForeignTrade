@@ -6718,3 +6718,14 @@ i.c-sky-icon {
     color: #f26322;
     font-size: 1.7rem;
 }
+
+.intro-disk{
+    display: block;
+}
+
+.intro-disk img{
+    display: block;
+    width: 75.2%;
+    float: right;
+    margin-right: 20px;
+}

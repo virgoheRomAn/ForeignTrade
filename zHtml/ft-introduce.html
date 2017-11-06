@@ -152,6 +152,9 @@
     <a class="intro-bottom" href="javascript:;">Contact us</a>
 </div>
 
+<div class="ft-pop-disk intro-disk">
+    <label><img src="../img/disk-bg.png"></label>
+</div>
 
 <!--显示产品大图-->
 <div class="ft-pop-disk product-big animated-left">
@@ -195,6 +198,10 @@
         $(".intro-btn").click(function () {
             $(this).toggleClass("active");
             $(".intro-method").slideToggle();
+        });
+
+        $(".intro-disk").click(function () {
+            $(this).fadeOut();
         });
 
         $(".intro-bottom").click(function () {
