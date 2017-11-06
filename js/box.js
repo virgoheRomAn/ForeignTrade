@@ -365,11 +365,12 @@
             btnBar.find("a.j-btn").each(function (i) {
                 if (btnAry[i].callback) {
                     $(this).click(function () {
-                        $.jClose({
+                        var opt=$.extend({},{
                             type: 2,
                             time: 300,
                             callback: btnAry[i].callback
-                        });
+                        },btnAry[i].closeOpt?btnAry[i].closeOpt:{});
+                        $.jClose(opt);
                     });
                 } else if (callbacks && Object.prototype.toString.call(callbacks) == '[object Array]') {
                     $(this).click(function () {
