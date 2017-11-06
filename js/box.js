@@ -201,8 +201,7 @@
                         if (!obj.width && obj.height) {
                             w = _newWidth >= 200 ? 200 : _newWidth;
                         } else if (!obj.height && obj.width) {
-                            h = $countEle.css("width", w).outerHeight(true);
-                            $countEle.removeAttr("style");
+                            h = $countEle.css("width", w).outerHeight(true)+30;
                         } else if (obj.width && obj.height) {
                             $countEle.css("padding", "0 15px");
                         } else if (!obj.width && !obj.height) {
@@ -409,7 +408,6 @@
                 console.error("找不到元素：'jDisk'");
                 return false;
             }
-            console.log(_time, _type, _callback);
             switch (_type) {
                 case 1:
                     clearTimeout(_timer_);
